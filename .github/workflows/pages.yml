@@ -24,12 +24,12 @@ jobs:
         with:
           node-version: '24'
 
-      # enablement turns Pages on if it has never been enabled for the repo,
-      # instead of failing with "Get Pages site failed".
+      # Pages must already be enabled: Settings -> Pages -> Source: GitHub Actions.
+      # This step cannot enable it for you — creating a Pages site needs repo
+      # administration rights and GITHUB_TOKEN has no such scope, so `enablement:
+      # true` fails with "Resource not accessible by integration".
       - uses: actions/configure-pages@v5
         id: pages
-        with:
-          enablement: true
 
       # Regenerates index.html and s/<slug>/index.html from data/library.json.
       # No dependencies to install — the generator is plain Node.
