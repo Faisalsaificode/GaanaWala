@@ -97,7 +97,6 @@ export default [
   { t: 'Main Shayar To Nahin', f: 'Bobby', y: 1973 },
   { t: 'Na Chahoon Sona Chandi', f: 'Bobby', y: 1973 },
   { t: 'Dafliwale Dafli Baja', f: 'Sargam', y: 1979 },
-  { t: 'Parbat Ke Peechhe', f: 'Mera Gaon Mera Desh', y: 1971 },
   { t: 'Aaja Aaja Main Hoon', f: 'Teesri Manzil', y: 1966, q: 'Aaja Aaja Main Hoon Pyar Tera Teesri Manzil Rafi' },
   { t: 'Gulabi Aankhen', f: 'The Train', y: 1970 },
   { t: 'Kis Liye Maine Pyar Kiya', f: 'The Train', y: 1970 },

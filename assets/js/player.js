@@ -85,10 +85,9 @@
     Array.prototype.forEach.call(el.list.children, function (li, i) {
       li.setAttribute('aria-current', String(i === index));
       li.classList.toggle('dead', !!dead[songs[i].yt]);
+      // Show the playing row where it sits rather than opening all 100.
+      li.classList.toggle('reveal', i === index && i >= VISIBLE);
     });
-
-    // Never leave the playing track hidden behind "show all".
-    if (el.list.classList.contains('collapsed') && index >= VISIBLE) expandList();
 
     if ('mediaSession' in navigator) {
       try {

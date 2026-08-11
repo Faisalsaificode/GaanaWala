@@ -306,8 +306,11 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 800; line-
 .section-head .count { font-size: 0.85rem; color: var(--ink-soft); font-weight: 600; }
 
 .tracks { list-style: none; margin: 0 0 1rem; padding: 0; border: 3px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper-2); }
-/* A 100-song rotation opens showing the first --visible rows. */
+/* A 100-song rotation opens showing the first --visible rows. The rotation
+   starts at a time-derived point that is usually past the fold, so the playing
+   row is revealed in place rather than expanding the whole list. */
 .tracks.collapsed li:nth-child(n + 31) { display: none; }
+.tracks.collapsed li.reveal { display: block; }
 .show-all {
   display: block; width: 100%; margin: 0 0 3rem;
   padding: 0.7rem 1rem; border: 3px solid var(--line); border-radius: var(--radius);

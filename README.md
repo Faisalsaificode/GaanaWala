@@ -3,7 +3,7 @@
 A directory of Indian places, each with its own radio station. The barber's. The truck
 cabin at 2am. The tapri at golden hour. Pick a place from the homepage and press play.
 
-**14 stations · 168 songs**, all playing through YouTube's own player.
+**14 stations · 1,346 songs**, all playing through YouTube's own player.
 
 | | |
 |---|---|
@@ -40,6 +40,7 @@ tools/serve.mjs         local preview server
 tools/check-embeds.mjs  drives real Chrome: does it play, is everything embeddable
 tools/check-counters    visitor-counter UI, no Firebase needed
 tools/check-firebase    visitor counters end to end against the live database
+tools/prune.mjs         drops entries that failed to resolve, or duplicate one
 assets/                 css + js shared by every page
 index.html, s/          generated — do not hand-edit
 ```
@@ -94,9 +95,22 @@ npm run check          # in another
 ```
 
 `check` launches headless Chrome, confirms stations actually start playing, then cues
-all 168 videos and reports any that YouTube refuses to embed. Rights holders can disable
-embedding at any time, so it is worth re-running occasionally. Anything it flags needs a
-new `q` in `seed.mjs` followed by `resolve` + `build`.
+every video in the library and reports any that YouTube refuses to embed. Rights holders
+can disable embedding at any time, so it is worth re-running occasionally. Anything it
+flags needs a new `q` in the station's song file, followed by `resolve` + `build`.
+
+### Pruning
+
+```bash
+npm run prune:dry   # report what would go
+npm run prune       # rewrite the song files
+```
+
+After a big resolve run, `prune` removes entries that never found a verifiable id, and
+entries that resolved to a video already in the same station under a different name.
+Both are worth removing rather than leaving: a dead entry costs a wasted lookup on every
+forced run, and a duplicate puts the same song in one rotation twice. Follow it with
+`npm run resolve && npm run build`.
 
 The player also handles this at runtime: if a video turns out to be unplayable it gets
 marked and skipped rather than stalling the station.

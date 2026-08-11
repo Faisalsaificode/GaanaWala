@@ -81,7 +81,6 @@ export default [
   { t: 'Boot Polishan', a: 'Gurdas Maan', q: 'Boot Polishan Gurdas Maan song' },
   { t: 'Punjabian Di Shaan', a: 'Mika Singh', q: 'Punjabian Di Shaan Vakhri song' },
   { t: 'Sawan Mein Lag Gayi Aag', a: 'Mika Singh', q: 'Sawan Mein Lag Gayi Aag Ginny Weds Sunny song' },
-  { t: 'Aa Gaya Hero', a: 'Mika Singh', q: 'Mauja Hi Mauja Jab We Met Mika Singh full song' },
   { t: 'Jhoom Barabar Jhoom', a: 'Mika Singh', q: 'Jhoom Barabar Jhoom title track full song' },
   { t: 'Ainvayi Ainvayi Dhaba', f: 'Band Baaja Baaraat', y: 2010, q: 'Ainvayi Ainvayi Band Baaja Baaraat full song' },
   { t: 'Tunak Tunak Dhaba', a: 'Daler Mehndi', q: 'Tunak Tunak Tun Daler Mehndi full official video' },

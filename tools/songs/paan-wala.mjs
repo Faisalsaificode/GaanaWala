@@ -74,7 +74,6 @@ export default [
   { t: 'Deewana Hua Badal', f: 'Kashmir Ki Kali', y: 1964 },
   { t: 'Jaan Pehechan Ho', f: 'Gumnaam', y: 1965 },
   { t: 'Gumnaam Hai Koi', f: 'Gumnaam', y: 1965 },
-  { t: 'Is Duniya Mein Jeena Ho', f: 'Gumnaam', y: 1965 },
   { t: 'Aaj Ki Raat Koi Aane Ko Hai', f: 'Anamika', y: 1973 },
   { t: 'Bahon Mein Chale Aao', f: 'Anamika', y: 1973 },
   { t: 'Jaan-E-Jaan Dhoondta', f: 'Jawani Diwani', y: 1972 },

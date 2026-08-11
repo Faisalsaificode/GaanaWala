@@ -203,7 +203,12 @@ function stationPage(st) {
   const svg = art[st.art] ? art[st.art](st.accent, st.accent2) : '';
   const others = lib.stations.filter((s) => s.slug !== st.slug);
 
-  const tracks = st.songs
+  // The player only ever loads songs that have a verified id, so the rendered
+  // rows must be exactly that same list — otherwise row N plays song N-of-a-
+  // different-list and every click below the first gap is wrong.
+  const songs = st.songs.filter((s) => s.yt);
+
+  const tracks = songs
     .map(
       (s, i) => `<li${i === 0 ? '' : ''}>
       <button type="button">
@@ -221,7 +226,7 @@ function stationPage(st) {
   const payload = {
     slug: st.slug,
     name: st.name,
-    songs: st.songs.map((s) => ({ t: s.t, f: s.f || '', a: s.a || '', y: s.y || '', yt: s.yt || '' })),
+    songs: songs.map((s) => ({ t: s.t, f: s.f || '', a: s.a || '', y: s.y || '', yt: s.yt || '' })),
   };
 
   return `<!doctype html>
@@ -244,7 +249,7 @@ ${topbar(2)}
           <h1>${esc(st.name)}</h1>
           <span class="name-hi">${esc(st.hi)}</span>
         </div>
-        <div class="station-sub">${esc(st.tagline)} · ${st.songs.length} songs · ${runtime(st.songs)}</div>
+        <div class="station-sub">${esc(st.tagline)} · ${songs.length} songs · ${runtime(songs)}</div>
         <p class="station-blurb">${esc(st.blurb)}</p>
       </div>
       <figure class="art-panel">${svg}</figure>
@@ -294,14 +299,14 @@ ${topbar(2)}
 
     <div class="section-head">
       <h2>The rotation</h2>
-      <span class="count">${st.songs.length} songs · press a row to jump</span>
+      <span class="count">${songs.length} songs · press a row to jump</span>
     </div>
-    <ol class="tracks${st.songs.length > VISIBLE_TRACKS ? ' collapsed' : ''}" id="tracks" style="--visible:${VISIBLE_TRACKS}">
+    <ol class="tracks${songs.length > VISIBLE_TRACKS ? ' collapsed' : ''}" id="tracks" style="--visible:${VISIBLE_TRACKS}">
 ${tracks}
     </ol>
 ${
-  st.songs.length > VISIBLE_TRACKS
-    ? `    <button class="show-all" id="show-all" type="button" aria-expanded="false">Show all ${st.songs.length} songs</button>`
+  songs.length > VISIBLE_TRACKS
+    ? `    <button class="show-all" id="show-all" type="button" aria-expanded="false">Show all ${songs.length} songs</button>`
     : ''
 }
 

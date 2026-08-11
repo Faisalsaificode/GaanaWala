@@ -12,7 +12,11 @@
     "resolve:force": "node tools/resolve-youtube.mjs --force",
     "check": "node tools/check-embeds.mjs",
     "check:counters": "node tools/check-counters.mjs",
-    "check:firebase": "node tools/check-firebase.mjs"
+    "check:firebase": "node tools/check-firebase.mjs",
+    "prune": "node tools/prune.mjs",
+    "prune:dry": "node tools/prune.mjs --dry"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

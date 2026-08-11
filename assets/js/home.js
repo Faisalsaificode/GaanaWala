@@ -16,31 +16,45 @@
     return 'evening';
   }
 
-  /* --- what suits this hour in India --- */
-
-  var live = stations.filter(function (s) { return (s.hours || []).indexOf(hour) > -1; });
-  var pick = live.length ? live[GW.dayOfYear() % live.length] : stations[0];
-
-  var hint = document.getElementById('now-hint');
-  if (hint && pick) {
-    hint.innerHTML =
-      '<span class="pulse" aria-hidden="true"></span>' +
-      '<span>It is <b>' + GW.istParts().label + '</b> in India — this is a ' +
-      '<a href="s/' + pick.slug + '/">' + pick.name + '</a> hour.</span>';
-  }
-
-  live.forEach(function (s) {
-    var badge = document.querySelector('[data-slug="' + s.slug + '"] .badge');
-    if (badge) { badge.textContent = 'right now'; badge.classList.add('live'); }
-  });
-
-  /* --- filtering --- */
-
   var cards = Array.prototype.slice.call(document.querySelectorAll('.card[data-slug]'));
   var input = document.getElementById('filter');
   var chips = Array.prototype.slice.call(document.querySelectorAll('.chip[data-bucket]'));
   var empty = document.getElementById('empty');
+  var hint = document.getElementById('now-hint');
   var activeBucket = 'all';
+
+  /* --- what suits this hour in India ---
+     Re-run on a timer: the clock in the header ticks, so a frozen "it is 3:58am"
+     next to a header reading 4:12am looks broken. This also flips the "right
+     now" badges over when the hour rolls into a different set of stations. */
+
+  function renderNow() {
+    hour = GW.istParts().hour;
+
+    var live = stations.filter(function (s) { return (s.hours || []).indexOf(hour) > -1; });
+    var pick = live.length ? live[GW.dayOfYear() % live.length] : stations[0];
+
+    if (hint && pick) {
+      hint.innerHTML =
+        '<span class="pulse" aria-hidden="true"></span>' +
+        '<span>It is <b>' + GW.istParts().label + '</b> in India — this is a ' +
+        '<a href="s/' + pick.slug + '/">' + pick.name + '</a> hour.</span>';
+    }
+
+    // Reset every badge, then mark the ones that fit this hour, so a station
+    // that has just stopped being "right now" goes back to its song count.
+    stations.forEach(function (s) {
+      var badge = document.querySelector('[data-slug="' + s.slug + '"] .badge');
+      if (!badge) return;
+      var isLive = (s.hours || []).indexOf(hour) > -1;
+      badge.textContent = isLive ? 'right now' : (s.songs || []).length + ' songs';
+      badge.classList.toggle('live', isLive);
+    });
+
+    if (activeBucket === 'now') render();
+  }
+
+  /* --- filtering --- */
 
   function matches(card) {
     var s = stations.find(function (x) { return x.slug === card.dataset.slug; });
@@ -81,5 +95,7 @@
     });
   });
 
+  renderNow();
   render();
+  setInterval(renderNow, 20000);
 })();
