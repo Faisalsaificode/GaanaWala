@@ -22,10 +22,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
+      # enablement turns Pages on if it has never been enabled for the repo,
+      # instead of failing with "Get Pages site failed".
       - uses: actions/configure-pages@v5
         id: pages
+        with:
+          enablement: true
 
       # Regenerates index.html and s/<slug>/index.html from data/library.json.
       # No dependencies to install — the generator is plain Node.
