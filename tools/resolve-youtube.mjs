@@ -19,6 +19,11 @@ const OUT = path.join(ROOT, 'data', 'library.json');
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36';
 
+// Concurrency is deliberately modest: YouTube throttles bursts, and the backoff
+// that recovers from it costs more time than the parallelism saves.
+let JOBS = 3;
+const DELAY = 350;
+
 const OFFICIAL = [
   't-series', 'saregama', 'sony music india', 'zee music company', 'shemaroo',
   'tips official', 'tips music', 'venus', 'ultra bollywood', 'ultra movie parlour',
@@ -192,6 +197,8 @@ async function main() {
   const force = args.includes('--force');
   const onlyIdx = args.indexOf('--only');
   const only = onlyIdx > -1 ? args[onlyIdx + 1] : null;
+  const jobsIdx = args.indexOf('--jobs');
+  if (jobsIdx > -1) JOBS = Math.max(1, Math.min(6, parseInt(args[jobsIdx + 1], 10) || 3));
 
   let cache = {};
   if (existsSync(OUT) && !force) {
@@ -216,33 +223,47 @@ async function main() {
     }
 
     process.stdout.write(`\n${station.name}\n`);
-    const songs = [];
-    for (const song of station.songs) {
-      const key = `${station.slug}::${song.t}`;
-      if (cache[key]) {
-        songs.push(cache[key]);
-        process.stdout.write(`  · ${song.t} (cached)\n`);
-        continue;
-      }
-      try {
-        const r = await resolve(song);
-        if (r.ok) {
-          songs.push({ ...song, yt: r.yt, ytTitle: r.ytTitle, channel: r.channel, dur: r.duration });
-          resolved++;
-          process.stdout.write(`  ✓ ${song.t} → ${r.yt}  ${r.ytTitle.slice(0, 58)}\n`);
-        } else {
-          songs.push({ ...song });
-          failed++;
-          process.stdout.write(`  ✗ ${song.t} — ${r.reason}\n`);
+
+    // Resolve a few at a time but keep the rotation in its curated order.
+    const songs = new Array(station.songs.length);
+    let cursor = 0;
+
+    async function worker() {
+      while (cursor < station.songs.length) {
+        const i = cursor++;
+        const song = station.songs[i];
+        const key = `${station.slug}::${song.t}`;
+
+        if (cache[key]) {
+          songs[i] = cache[key];
+          continue;
         }
-      } catch (err) {
-        songs.push({ ...song });
-        failed++;
-        process.stdout.write(`  ! ${song.t} — ${err.message}\n`);
+        try {
+          const r = await resolve(song);
+          if (r.ok) {
+            songs[i] = { ...song, yt: r.yt, ytTitle: r.ytTitle, channel: r.channel, dur: r.duration };
+            resolved++;
+            process.stdout.write(`  ✓ ${song.t} → ${r.yt}  ${r.ytTitle.slice(0, 52)}\n`);
+          } else {
+            songs[i] = { ...song };
+            failed++;
+            process.stdout.write(`  ✗ ${song.t} — ${r.reason}\n`);
+          }
+        } catch (err) {
+          songs[i] = { ...song };
+          failed++;
+          process.stdout.write(`  ! ${song.t} — ${err.message}\n`);
+        }
+        await sleep(DELAY);
       }
-      await sleep(400);
     }
+
+    await Promise.all(Array.from({ length: JOBS }, worker));
     out.stations.push({ ...station, songs });
+
+    // Save after every station so a long run can be interrupted and resumed.
+    await mkdir(path.dirname(OUT), { recursive: true });
+    await writeFile(OUT, JSON.stringify({ ...out, partial: true }, null, 2) + '\n', 'utf8');
   }
 
   await mkdir(path.dirname(OUT), { recursive: true });

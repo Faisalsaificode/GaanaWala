@@ -1,0 +1,173 @@
+// Station identity: name, copy, colours, scene art, and the hours in India when
+// each one fits. The songs live in tools/songs/<slug>.mjs.
+
+export const stations = [
+  {
+    slug: 'saloon-wala',
+    name: 'Saloon Wala',
+    hi: 'सैलून वाला',
+    tagline: 'The ₹30 haircut canon',
+    blurb:
+      'A ceiling fan, a cracked mirror, a steel bowl of lather and one speaker turned up past what it can handle. These are the songs that played while the barber asked you, again, whether you wanted it short on the sides.',
+    art: 'saloon',
+    accent: '#e0483a',
+    accent2: '#f2b134',
+    hours: [10, 11, 12, 13, 14, 15, 16, 17],
+  },
+  {
+    slug: 'truck-wala',
+    name: 'Truck Wala',
+    hi: 'ट्रक वाला',
+    tagline: 'Horn OK Please, 2am',
+    blurb:
+      'The cabin canon. Sung at full volume on a dark stretch of national highway with nothing on either side, four hours still to go, and a photograph taped above the windscreen. Mostly about distance, letters, and people who did not wait.',
+    art: 'truck',
+    accent: '#f2b134',
+    accent2: '#2d7d8a',
+    hours: [22, 23, 0, 1, 2, 3, 4],
+  },
+  {
+    slug: 'bus-wala',
+    name: 'Bus Wala',
+    hi: 'बस वाला',
+    tagline: 'Window seat, morning ghat',
+    blurb:
+      'State transport, 7am, the window jammed half open. Somebody up front has a phone speaker going and nobody minds. Songs for hills on one side, a valley on the other, and a conductor who knows every stop by heart.',
+    art: 'bus',
+    accent: '#2d7d8a',
+    accent2: '#f2b134',
+    hours: [6, 7, 8, 9],
+  },
+  {
+    slug: 'auto-wala',
+    name: 'Auto Wala',
+    hi: 'ऑटो वाला',
+    tagline: 'Speaker bigger than the meter',
+    blurb:
+      'Three wheels, mirror-work upholstery, a subwoofer where the toolbox should be. He takes the corner at an angle the physics does not allow and the bass does not drop for the whole ride.',
+    art: 'auto',
+    accent: '#f0c419',
+    accent2: '#1c8a4a',
+    hours: [18, 19, 20, 21],
+  },
+  {
+    slug: 'chai-tapri',
+    name: 'Chai Tapri',
+    hi: 'चाय टपरी',
+    tagline: 'Golden hour, cutting chai',
+    blurb:
+      'Steel glasses, plastic stools, one kettle that has never been washed and gossip that solves nothing and everything. The sun is going down behind the flyover and nobody has anywhere to be for twenty more minutes.',
+    art: 'chai',
+    accent: '#c96f2c',
+    accent2: '#e8a33d',
+    hours: [16, 17, 18],
+  },
+  {
+    slug: 'gym-wala',
+    name: 'Gym Wala',
+    hi: 'जिम वाला',
+    tagline: 'Last set, no spotter',
+    blurb:
+      'Basement gym, one mirror wall, rusted plates and a trainer named Pehelwan ji. The playlist has exactly one job and it does it without subtlety.',
+    art: 'gym',
+    accent: '#d63b2f',
+    accent2: '#222831',
+    hours: [5, 6, 7, 19, 20],
+  },
+  {
+    slug: 'shaadi-wala',
+    name: 'Shaadi Wala',
+    hi: 'शादी वाला',
+    tagline: 'Baraat is not moving',
+    blurb:
+      'Generator lights, a dhol that started at four in the afternoon, and every uncle convinced the floor is his. The baraat has covered forty metres in an hour and a half. Nobody is complaining.',
+    art: 'shaadi',
+    accent: '#e0206c',
+    accent2: '#f2b134',
+    hours: [19, 20, 21, 22],
+  },
+  {
+    slug: 'dhaba-wala',
+    name: 'Dhaba Wala',
+    hi: 'ढाबा वाला',
+    tagline: 'Charpai, dal makhani, 1am',
+    blurb:
+      'Somewhere on GT Road. String lights, a tandoor still going, charpais laid out in the gravel. Punjabi at a volume that carries to the next dhaba, which is playing the same song.',
+    art: 'dhaba',
+    accent: '#e07b39',
+    accent2: '#1c8a4a',
+    hours: [21, 22, 23, 0, 1],
+  },
+  {
+    slug: 'paan-wala',
+    name: 'Paan Wala',
+    hi: 'पान वाला',
+    tagline: 'Meetha, extra gulkand',
+    blurb:
+      'A glass case of silver leaf and supari, a transistor on the shelf, and a queue of three men who came for cigarettes and stayed for the argument. Pure eighties masala, no apologies.',
+    art: 'paan',
+    accent: '#1c8a4a',
+    accent2: '#e0483a',
+    hours: [20, 21, 22],
+  },
+  {
+    slug: 'mandir-wala',
+    name: 'Mandir Wala',
+    hi: 'मंदिर वाला',
+    tagline: '5am, bell and loudspeaker',
+    blurb:
+      'Before the traffic starts. A bell, a conch, agarbatti smoke and a horn speaker on a pole that the whole colony can hear whether it wants to or not.',
+    art: 'mandir',
+    accent: '#e8931f',
+    accent2: '#c0392b',
+    hours: [4, 5, 6, 7],
+  },
+  {
+    slug: 'qawwali-wala',
+    name: 'Qawwali Wala',
+    hi: 'कव्वाली वाला',
+    tagline: 'Dargah courtyard, after Isha',
+    blurb:
+      'Harmonium, tabla, and eight men clapping on the off-beat until the courtyard gives in. It starts slow. It does not stay slow.',
+    art: 'qawwali',
+    accent: '#2f6f6b',
+    accent2: '#d9a441',
+    hours: [21, 22, 23, 0],
+  },
+  {
+    slug: 'train-wala',
+    name: 'Train Wala',
+    hi: 'ट्रेन वाला',
+    tagline: 'Side upper, 3am, chai',
+    blurb:
+      'Sleeper class with the window shutter up. Fields going past in the dark, somebody snoring two berths down, and a chaiwala who will come through at exactly the wrong hour. Kishore, mostly.',
+    art: 'train',
+    accent: '#3b5a7a',
+    accent2: '#e8a33d',
+    hours: [23, 0, 1, 2, 3, 4, 5],
+  },
+  {
+    slug: 'barish-wala',
+    name: 'Barish Wala',
+    hi: 'बारिश वाला',
+    tagline: 'First rain, grille open',
+    blurb:
+      'The smell before it lands, then the sound on the tin awning. Power will go in about four minutes. Somebody is already making pakodas.',
+    art: 'barish',
+    accent: '#4a7fa5',
+    accent2: '#7fb069',
+    hours: [15, 16, 17, 18, 19],
+  },
+  {
+    slug: 'padhai-wala',
+    name: 'Padhai Wala',
+    hi: 'पढ़ाई वाला',
+    tagline: 'Table lamp, 2am, exam in six days',
+    blurb:
+      'One lamp, one desk, a cold cup of Bournvita and a syllabus that is not going to finish itself. Soft enough to keep going, sad enough to feel like it matters.',
+    art: 'padhai',
+    accent: '#6b5b95',
+    accent2: '#e8a33d',
+    hours: [22, 23, 0, 1, 2],
+  },
+];

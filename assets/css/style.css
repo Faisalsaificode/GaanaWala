@@ -305,7 +305,16 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 800; line-
 .section-head h2 { font-size: 1.55rem; }
 .section-head .count { font-size: 0.85rem; color: var(--ink-soft); font-weight: 600; }
 
-.tracks { list-style: none; margin: 0 0 3rem; padding: 0; border: 3px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper-2); }
+.tracks { list-style: none; margin: 0 0 1rem; padding: 0; border: 3px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--paper-2); }
+/* A 100-song rotation opens showing the first --visible rows. */
+.tracks.collapsed li:nth-child(n + 31) { display: none; }
+.show-all {
+  display: block; width: 100%; margin: 0 0 3rem;
+  padding: 0.7rem 1rem; border: 3px solid var(--line); border-radius: var(--radius);
+  background: var(--paper-2); color: inherit; font: inherit; font-weight: 700; cursor: pointer;
+  transition: background 0.12s ease;
+}
+.show-all:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
 .tracks li { border-bottom: 2px solid color-mix(in srgb, var(--line) 40%, transparent); }
 .tracks li:last-child { border-bottom: 0; }
 .tracks button {

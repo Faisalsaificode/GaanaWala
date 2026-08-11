@@ -33,6 +33,19 @@ const esc = (s) =>
 
 const mins = (songs) => Math.round(songs.reduce((n, s) => n + (s.dur || 240), 0) / 60);
 
+// A hundred songs is roughly eight hours; "482 min" reads worse than "8 hr".
+function runtime(songs) {
+  const m = mins(songs);
+  if (m < 120) return `${m} min`;
+  const h = Math.floor(m / 60);
+  const rem = m % 60;
+  return rem >= 10 ? `${h} hr ${rem} min` : `${h} hr`;
+}
+
+// Only the first chunk of a long rotation is rendered open; the rest is one
+// click away, or opens on its own if playback lands down there.
+const VISIBLE_TRACKS = 30;
+
 // Pick black or white text for a given accent so the "right now" badge and the
 // play button stay readable on both the yellow and the deep teal stations.
 function readableOn(hex) {
@@ -120,7 +133,7 @@ function card(st) {
     <div class="tag">${esc(st.tagline)}</div>
     <div class="meta">
       <span class="live-for" data-live-for="${st.slug}" hidden></span>
-      <span class="dim">${mins(st.songs)} min rotation</span>
+      <span class="dim">${runtime(st.songs)} rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -231,7 +244,7 @@ ${topbar(2)}
           <h1>${esc(st.name)}</h1>
           <span class="name-hi">${esc(st.hi)}</span>
         </div>
-        <div class="station-sub">${esc(st.tagline)} · ${st.songs.length} songs · ${mins(st.songs)} min</div>
+        <div class="station-sub">${esc(st.tagline)} · ${st.songs.length} songs · ${runtime(st.songs)}</div>
         <p class="station-blurb">${esc(st.blurb)}</p>
       </div>
       <figure class="art-panel">${svg}</figure>
@@ -283,9 +296,14 @@ ${topbar(2)}
       <h2>The rotation</h2>
       <span class="count">${st.songs.length} songs · press a row to jump</span>
     </div>
-    <ol class="tracks" id="tracks">
+    <ol class="tracks${st.songs.length > VISIBLE_TRACKS ? ' collapsed' : ''}" id="tracks" style="--visible:${VISIBLE_TRACKS}">
 ${tracks}
     </ol>
+${
+  st.songs.length > VISIBLE_TRACKS
+    ? `    <button class="show-all" id="show-all" type="button" aria-expanded="false">Show all ${st.songs.length} songs</button>`
+    : ''
+}
 
     <div class="section-head"><h2>Somewhere else</h2></div>
     <nav class="strip">

@@ -40,6 +40,15 @@
      live rather than like a list that always opens on track one. */
   index = songs.length ? (GW.dayOfYear() * 7 + GW.istParts().hour * 3) % songs.length : 0;
 
+  var VISIBLE = parseInt((el.list && getComputedStyle(el.list).getPropertyValue('--visible')) || '30', 10) || 30;
+
+  function expandList() {
+    if (!el.list) return;
+    el.list.classList.remove('collapsed');
+    var btn = document.getElementById('show-all');
+    if (btn) { btn.setAttribute('aria-expanded', 'true'); btn.hidden = true; }
+  }
+
   var ICON_PLAY = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
   var ICON_PAUSE = '<svg viewBox="0 0 24 24"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
 
@@ -77,6 +86,9 @@
       li.setAttribute('aria-current', String(i === index));
       li.classList.toggle('dead', !!dead[songs[i].yt]);
     });
+
+    // Never leave the playing track hidden behind "show all".
+    if (el.list.classList.contains('collapsed') && index >= VISIBLE) expandList();
 
     if ('mediaSession' in navigator) {
       try {
@@ -229,6 +241,9 @@
   Array.prototype.forEach.call(el.list.children, function (li, i) {
     li.querySelector('button').addEventListener('click', function () { load(i, true); });
   });
+
+  var showAll = document.getElementById('show-all');
+  if (showAll) showAll.addEventListener('click', expandList);
 
   document.querySelectorAll('[data-sleep]').forEach(function (btn) {
     btn.addEventListener('click', function () {

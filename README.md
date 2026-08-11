@@ -29,15 +29,19 @@ Node itself. That is deliberate: GitHub Pages serves static files, and everythin
 static files.
 
 ```
-data/library.json      the whole library: stations, songs, verified YouTube ids
-tools/seed.mjs         hand-curated source of truth (titles, films, years)
-tools/resolve-youtube  seed.mjs → verified video ids → data/library.json
-tools/art.mjs          the 14 scene illustrations, as inline SVG
-tools/build.mjs        library.json → index.html + s/<slug>/index.html
-tools/serve.mjs        local preview server
-tools/check-embeds.mjs drives real Chrome: does it play, is everything embeddable
-assets/                css + js shared by every page
-index.html, s/         generated — do not hand-edit
+tools/stations.mjs      station identity: names, copy, colours, art, hours
+tools/songs/<slug>.mjs  one file per station, ~100 curated songs each
+tools/seed.mjs          composes the two above, drops duplicate titles
+tools/resolve-youtube   seed → verified video ids → data/library.json
+data/library.json       the whole library, generated
+tools/art.mjs           the 14 scene illustrations, as inline SVG
+tools/build.mjs         library.json → index.html + s/<slug>/index.html
+tools/serve.mjs         local preview server
+tools/check-embeds.mjs  drives real Chrome: does it play, is everything embeddable
+tools/check-counters    visitor-counter UI, no Firebase needed
+tools/check-firebase    visitor counters end to end against the live database
+assets/                 css + js shared by every page
+index.html, s/          generated — do not hand-edit
 ```
 
 Each page has its own data inlined, so there is no runtime `fetch` and no CORS to worry
@@ -61,14 +65,26 @@ npm start         # both
 
 ### Adding a station or changing songs
 
-1. Edit `tools/seed.mjs` — add a station block, or add songs as `{ t, f, y }`
-   (title, film, year). Use `a` for non-film artists and `q` to override the
-   search query when a title is ambiguous.
+1. Add songs to `tools/songs/<slug>.mjs` as `{ t, f, y }` (title, film, year).
+   Use `a` for non-film artists, and `q` to override the search query when a
+   title is ambiguous — `q` is how you steer the resolver away from a cover, a
+   remix or a jukebox and onto the recording you actually mean.
 2. `npm run resolve` — finds and **verifies** a YouTube id for anything new.
-   Existing ids are cached and left alone; `npm run resolve:force` redoes everything.
+   Existing ids are cached and left alone, so this only costs time for what you
+   added. `npm run resolve:force` redoes everything from scratch.
 3. `npm run build`.
 
-A new station also needs a scene in `tools/art.mjs` under the key you set as `art`.
+A new station needs a block in `tools/stations.mjs`, a `tools/songs/<slug>.mjs`
+file, a matching entry in the `SONGS` map in `tools/seed.mjs`, and a scene in
+`tools/art.mjs` under the key you set as `art`.
+
+Duplicate titles inside one station are dropped automatically at build time and
+reported, so it is safe to append without checking the whole list first.
+
+The resolver runs three lookups at a time (`--jobs N`, max 6). Higher is not
+faster: YouTube throttles bursts and the backoff costs more than the
+parallelism saves. It also saves after every station, so a long run can be
+interrupted and picked up again.
 
 ### Checking it still works
 
