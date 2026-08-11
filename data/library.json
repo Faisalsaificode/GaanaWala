@@ -1,0 +1,1783 @@
+{
+  "generatedAt": "2026-08-11T16:01:33.103Z",
+  "stations": [
+    {
+      "slug": "saloon-wala",
+      "name": "Saloon Wala",
+      "hi": "सैलून वाला",
+      "tagline": "The ₹30 haircut canon",
+      "blurb": "A ceiling fan, a cracked mirror, a steel bowl of lather and one speaker turned up past what it can handle. These are the songs that played while the barber asked you, again, whether you wanted it short on the sides.",
+      "art": "saloon",
+      "accent": "#e0483a",
+      "accent2": "#f2b134",
+      "hours": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "songs": [
+        {
+          "t": "Tu Cheez Badi Hai Mast Mast",
+          "f": "Mohra",
+          "y": 1994,
+          "yt": "DHWVkvhQB3U",
+          "ytTitle": "Full 4K Video: Tu Cheez Badi Hai Mast Mast | Mohra | Akshay Kumar, Raveena Tandon | Udit Narayan",
+          "channel": "Shemaroo 4K Hindi Songs",
+          "dur": 348
+        },
+        {
+          "t": "Ole Ole",
+          "f": "Yeh Dillagi",
+          "y": 1994,
+          "yt": "hcCvSmjHwGY",
+          "ytTitle": "Ole Ole Full Song | Yeh Dillagi | Saif Ali Khan, Kajol | Abhijeet Bhattacharya, Dilip Sen-Sameer Sen",
+          "channel": "YRF",
+          "dur": 250
+        },
+        {
+          "t": "Yeh Kaali Kaali Aankhen",
+          "f": "Baazigar",
+          "y": 1993,
+          "yt": "KC-DuX51NY0",
+          "ytTitle": "Yeh Kaali Kaali Aankhen - LYRICAL VIDEO | Shah Rukh Khan & Kajol | Baazigar | Ishtar Music",
+          "channel": "Ishtar Music",
+          "dur": 449
+        },
+        {
+          "t": "Sona Kitna Sona Hai",
+          "f": "Hero No. 1",
+          "y": 1997,
+          "yt": "4mGzU0VbdSU",
+          "ytTitle": "Sona Kitna Sona Hai | Hero No 1 | Govinda | Karisma Kapoor | Udit N, Poornima | 90's Popular Song",
+          "channel": "Tips Official",
+          "dur": 156
+        },
+        {
+          "t": "Churake Dil Mera",
+          "f": "Main Khiladi Tu Anari",
+          "y": 1994,
+          "q": "Chura Ke Dil Mera 4K video song Main Khiladi Tu Anari Akshay Shilpa",
+          "yt": "Yqj1_V90KJo",
+          "ytTitle": "Chura Ke Dil Mera - 4K VIDEO | Akshay & Shilpa | Main Khiladi Tu Anari | Kumar Sanu & Alka Yagnik",
+          "channel": "Ishtar Music",
+          "dur": 454
+        },
+        {
+          "t": "Akhiyon Se Goli Maare",
+          "f": "Dulhe Raja",
+          "y": 1998,
+          "q": "Akhiyon Se Goli Maare full video song Dulhe Raja Govinda Raveena",
+          "yt": "1ad93G1wjdo",
+          "ytTitle": "Akhiyon Se Goli Maare | Full Video Song | Dulhe Raja (1998) Govinda., Raveena Tandon",
+          "channel": "A.K Music",
+          "dur": 257
+        },
+        {
+          "t": "Ruk Ruk Ruk",
+          "f": "Vijaypath",
+          "y": 1994,
+          "yt": "fVhfrX29Rl4",
+          "ytTitle": "Ruk Ruk Ruk | Vijaypath | Ajay Devgn | Tabu | Alisha Chinai | Anu Malik | 90's Hindi Hits",
+          "channel": "Tips Official",
+          "dur": 253
+        },
+        {
+          "t": "Jhanjhariya",
+          "f": "Krishna",
+          "y": 1996,
+          "yt": "Bft-O5AQ-0Y",
+          "ytTitle": "Jhanjhariya Uski Chanak Gayi - Lyrical | Krishna | Karisma, Sunil | Abhijeet Bhattacharya |90's Hits",
+          "channel": "Tips Official",
+          "dur": 274
+        },
+        {
+          "t": "Dhak Dhak Karne Laga",
+          "f": "Beta",
+          "y": 1992,
+          "yt": "P7i0Z4yDKNM",
+          "ytTitle": "Dhak Dhak Karne Laga - Video Song | Udit Narayan,Anuradha Paudwal | Beta | Anil Kapoor,Madhuri Dixit",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 304
+        },
+        {
+          "t": "Pehla Nasha",
+          "f": "Jo Jeeta Wohi Sikandar",
+          "y": 1992,
+          "yt": "Ki41AKu0iHc",
+          "ytTitle": "Pehla Nasha Lyrical | Aamir Khan | Sadhana Sargam | Udit Narayan | Jo Jeeta Wohi Sikandar",
+          "channel": "Saregama Music",
+          "dur": 308
+        },
+        {
+          "t": "Kisi Disco Mein Jaaye",
+          "f": "Bade Miyan Chote Miyan",
+          "y": 1998,
+          "yt": "TMEuO92RqD4",
+          "ytTitle": "Kisi Disco Mein Jaaye | Govinda | Raveena Tandon | Bade Miyan Chote Miyan | Alka Y, Udit N | Tips",
+          "channel": "Tips Official",
+          "dur": 175
+        },
+        {
+          "t": "Tumse Milne Ki Tamanna Hai",
+          "f": "Saajan",
+          "y": 1991,
+          "yt": "thjRNwjmAdQ",
+          "ytTitle": "Tumse Milne Ki Tamanna Hai - Lyrical | Saajan | Salman Khan & Madhuri | 90's Evergreen Hindi Songs",
+          "channel": "Ishtar Music",
+          "dur": 336
+        }
+      ]
+    },
+    {
+      "slug": "truck-wala",
+      "name": "Truck Wala",
+      "hi": "ट्रक वाला",
+      "tagline": "Horn OK Please, 2am",
+      "blurb": "The cabin canon. Sung at full volume on a dark stretch of national highway with nothing on either side, four hours still to go, and a photograph taped above the windscreen. Mostly about distance, letters, and people who did not wait.",
+      "art": "truck",
+      "accent": "#f2b134",
+      "accent2": "#2d7d8a",
+      "hours": [
+        22,
+        23,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "songs": [
+        {
+          "t": "Chitthi Aayi Hai",
+          "f": "Naam",
+          "y": 1986,
+          "yt": "v0_IRIFYC0k",
+          "ytTitle": "Chitthi Aayi Hai | Pankaj Udhas | Naam 1986 Songs | Sanjay Dutt, Nutan, Amrita Singh",
+          "channel": "Goldmines Gaane Sune Ansune",
+          "dur": 439
+        },
+        {
+          "t": "Main Nikla Gaddi Leke",
+          "f": "Gadar: Ek Prem Katha",
+          "y": 2001,
+          "q": "Main Nikla Gaddi Leke Gadar 2001 Udit Narayan Sunny Deol full song",
+          "yt": "2nK6WBcGPOw",
+          "ytTitle": "Main Nikla Gaddi Leke | Gadar 2 | Sunny Deol, Ameesha P, Utkarsh| Mithoon, Udit N, Aditya N| Uttam S",
+          "channel": "Zee Music Company",
+          "dur": 249
+        },
+        {
+          "t": "Pardesi Pardesi Jaana Nahin",
+          "f": "Raja Hindustani",
+          "y": 1996,
+          "yt": "vIgGCX0jvA0",
+          "ytTitle": "Pardesi Pardesi Jaana Nahi - Anuradha Paudwal, Shaurin Bhatt, Sapna Awasthi - Raja Hindustani ",
+          "channel": "Gold Classic Songs Forever",
+          "dur": 366
+        },
+        {
+          "t": "Tujhe Dekha To Ye Jaana Sanam",
+          "f": "Dilwale Dulhania Le Jayenge",
+          "y": 1995,
+          "yt": "cNV5hLSa9H8",
+          "ytTitle": "Tujhe Dekha Toh Song | Dilwale Dulhania Le Jayenge | Shah Rukh Khan, Kajol | Lata, Kumar Sanu | DDLJ",
+          "channel": "YRF",
+          "dur": 314
+        },
+        {
+          "t": "Chalte Chalte Mere Yeh Geet",
+          "f": "Chalte Chalte",
+          "y": 1976,
+          "yt": "FkEPpm8HfPs",
+          "ytTitle": "2. Chalte Chalte Mere Yeh Geet Lyrics | Chalte Chalte | Kishore Kumar",
+          "channel": "Independent Lyrics World",
+          "dur": 314
+        },
+        {
+          "t": "Ae Kaash Ke Hum",
+          "f": "Kabhi Haan Kabhi Naa",
+          "y": 1994,
+          "yt": "7egtbySpvfw",
+          "ytTitle": "Ae Kash Ke Hum - 4K Video Song | Shah Rukh Khan, Suchitra | Kabhi Haan Kabhi Naa | Kumar Sanu",
+          "channel": "Sony Music India",
+          "dur": 301
+        },
+        {
+          "t": "Kya Hua Tera Wada",
+          "f": "Hum Kisise Kum Naheen",
+          "y": 1977,
+          "yt": "4gtXTXWBK4o",
+          "ytTitle": "Kya Hua Tera Wada | Pranav Chandran | Saregama Covers | Hum Kisise Kum Nahi | Official Video",
+          "channel": "Saregama Music",
+          "dur": 193
+        },
+        {
+          "t": "Sochenge Tumhe Pyar",
+          "f": "Deewana",
+          "y": 1992,
+          "yt": "lFdSi01tpYM",
+          "ytTitle": "Sochenge Tumhe Pyar- Lyrical | #Deewana | #RishiKapoor, Divya Bharti | 90's Best Song",
+          "channel": "Ishtar Music",
+          "dur": 390
+        },
+        {
+          "t": "Tadap Tadap Ke",
+          "f": "Hum Dil De Chuke Sanam",
+          "y": 1999,
+          "yt": "KwiDJclWo44",
+          "ytTitle": "Tadap Tadap Ke Full Video Song | Hum Dil De Chuke Sanam | K.K.| Salman Khan, Aishwarya Rai",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 344
+        },
+        {
+          "t": "Meri Mehbooba",
+          "f": "Pardes",
+          "y": 1997,
+          "yt": "1ziaNhD9xqE",
+          "ytTitle": "Meri Mehbooba Lyrical - Pardes | Shahrukh Khan & Mahima | Kumar Sanu & Alka Yagnik | Shahrukh Hits",
+          "channel": "Tips Official",
+          "dur": 449
+        },
+        {
+          "t": "Dil Hoom Hoom Kare",
+          "f": "Rudaali",
+          "y": 1993,
+          "q": "Dil Hoom Hoom Kare Rudaali Lata Mangeshkar Bhupen Hazarika",
+          "yt": "5_elyIiNnB0",
+          "ytTitle": "Dil Hoom Hoom Kare || Rudaali 1993 || Reel The Life",
+          "channel": "Reel The Life",
+          "dur": 485
+        },
+        {
+          "t": "Lambi Judai",
+          "f": "Hero",
+          "y": 1983,
+          "yt": "8BvM1BEzDS8",
+          "ytTitle": "Lambi Judai | Hero | Reshma | Jackie Shroff, Meenakshi Seshadri | 80's Hindi Hits",
+          "channel": "Tips Official",
+          "dur": 259
+        }
+      ]
+    },
+    {
+      "slug": "bus-wala",
+      "name": "Bus Wala",
+      "hi": "बस वाला",
+      "tagline": "Window seat, morning ghat",
+      "blurb": "State transport, 7am, the window jammed half open. Somebody up front has a phone speaker going and nobody minds. Songs for hills on one side, a valley on the other, and a conductor who knows every stop by heart.",
+      "art": "bus",
+      "accent": "#2d7d8a",
+      "accent2": "#f2b134",
+      "hours": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "songs": [
+        {
+          "t": "Zindagi Ek Safar Hai Suhana",
+          "f": "Andaz",
+          "y": 1971,
+          "yt": "LlvoY4v5zm0",
+          "ytTitle": "Zindagi Ek Safar Hai Suhana | Andaz (1971) | Rajesh Khanna, Hema | Kishore Kumar | Romantic Songs",
+          "channel": "Shemaroo Filmi Gaane",
+          "dur": 262
+        },
+        {
+          "t": "Musafir Hoon Yaaron",
+          "f": "Parichay",
+          "y": 1972,
+          "yt": "qEs5uhpE-cw",
+          "ytTitle": "Musafir Hoon Yaaron - Parichay (1972) | Kishore Kumar",
+          "channel": "PVRadios",
+          "dur": 289
+        },
+        {
+          "t": "Suhana Safar Aur Yeh Mausam Haseen",
+          "f": "Madhumati",
+          "y": 1958,
+          "yt": "pK2WFw8nypc",
+          "ytTitle": "Suhana Safar Aur Yeh Mausam Haseen with lyrics | सुहाना सफर और ये मौसम हसीं | Madhumati | Mukesh",
+          "channel": "Saregama Music",
+          "dur": 250
+        },
+        {
+          "t": "Yeh Dosti Hum Nahi Todenge",
+          "f": "Sholay",
+          "y": 1975,
+          "yt": "1T8G_d5o5Gs",
+          "ytTitle": "Yeh Dosti Hum Nahi Todenge | Sholay(1975)| Amitabh Bachchan | Dharmendra | Evergreen Friendship Song",
+          "channel": "Shemaroo Filmi Gaane",
+          "dur": 378
+        },
+        {
+          "t": "Panchhi Banoon Udti Phiroon",
+          "f": "Chori Chori",
+          "y": 1956,
+          "yt": "qPXrVo3EF1g",
+          "ytTitle": "Panchhi Banoon Udti Phiroon | Chori Chori | Lata Mangeshkar Songs | Nargis",
+          "channel": "Golden Era with Nargis",
+          "dur": 279
+        },
+        {
+          "t": "Safarnama",
+          "f": "Tamasha",
+          "y": 2015,
+          "yt": "sOhESxhibAM",
+          "ytTitle": "Safarnama FULL AUDIO Song | Tamasha | Ranbir Kapoor, Deepika Padukone | T-Series",
+          "channel": "T-Series",
+          "dur": 252
+        },
+        {
+          "t": "Yun Hi Chala Chal",
+          "f": "Swades",
+          "y": 2004,
+          "yt": "eEeX2QMlSlo",
+          "ytTitle": "Yun Hi Chala Chal Lyrical Video | Swades | A.R. Rahman | Javed Akhtar | Udit Narayan | Shahrukh Khan",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 446
+        },
+        {
+          "t": "Aane Wala Pal",
+          "f": "Golmaal",
+          "y": 1979,
+          "yt": "xKUUCZCTByM",
+          "ytTitle": "Aanewala Pal Janewala Hai | Golmaal | Kishore Kumar | R.D. Burman | Gulzar",
+          "channel": "Saregama Music",
+          "dur": 221
+        },
+        {
+          "t": "Ruk Jana Nahin",
+          "f": "Imtihan",
+          "y": 1974,
+          "yt": "nfZQ7q1HheE",
+          "ytTitle": "Ruk Jana Nahin [III] - Kishore Kumar - Imtihan (1974)",
+          "channel": "Saregama Music",
+          "dur": 188
+        },
+        {
+          "t": "Mera Joota Hai Japani",
+          "f": "Shree 420",
+          "y": 1955,
+          "yt": "fy7P_Uu3alA",
+          "ytTitle": "मेरा जूता है जापानी Mera Joota Hai Japani | HD Song- Raj Kapoor | Mukesh | Superhit Song Shree 420",
+          "channel": "HD Songs Bollywood",
+          "dur": 258
+        },
+        {
+          "t": "Chala Jaata Hoon",
+          "f": "Mere Jeevan Saathi",
+          "y": 1972,
+          "yt": "AMykdxsMF-M",
+          "ytTitle": "Chala Jaata Hoon (Hindi/Bengali)| Kishore | Mere Jeevan Saathi | RD Burman | Anand Bakshi/Mukul",
+          "channel": " Anirban Paul - Kishore Kumar",
+          "dur": 464
+        },
+        {
+          "t": "Dil Chahta Hai",
+          "f": "Dil Chahta Hai",
+          "y": 2001,
+          "yt": "HoDgYV1NzAI",
+          "ytTitle": "Dil Chahta Hai Title Song Lyrical Video | Shankar Mahadevan|Aamir Khan,Akshaye Khanna,Saif Ali Khan",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 308
+        }
+      ]
+    },
+    {
+      "slug": "auto-wala",
+      "name": "Auto Wala",
+      "hi": "ऑटो वाला",
+      "tagline": "Speaker bigger than the meter",
+      "blurb": "Three wheels, mirror-work upholstery, a subwoofer where the toolbox should be. He takes the corner at an angle the physics does not allow and the bass does not drop for the whole ride.",
+      "art": "auto",
+      "accent": "#f0c419",
+      "accent2": "#1c8a4a",
+      "hours": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "songs": [
+        {
+          "t": "Dilbar Dilbar",
+          "f": "Sirf Tum",
+          "y": 1999,
+          "yt": "DEdPFepZPb4",
+          "ytTitle": "Dilbar Dilbar Lyrical Video | Sirf Tum | Alka Yagnik | Sameer | Sushmita Sen | Sanjay Kapoor",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 340
+        },
+        {
+          "t": "Kaanta Laga",
+          "a": "DJ Doll",
+          "y": 2002,
+          "yt": "wJ1mqmbngO0",
+          "ytTitle": "Kaanta Laga… Bangle Ke Peechhe | Samadhi Songs | Asha Parekh | Lata Mangeshkar Hits",
+          "channel": "Shemaroo Filmi Gaane",
+          "dur": 307
+        },
+        {
+          "t": "Tunak Tunak Tun",
+          "a": "Daler Mehndi",
+          "y": 1998,
+          "yt": "92ydUdqWE1g",
+          "ytTitle": "Tunak Tunak Tun Video | Daler Mehndi | Full Song | Daler Mehndi Music",
+          "channel": "Daler Mehndi Music",
+          "dur": 257
+        },
+        {
+          "t": "Bolo Ta Ra Ra",
+          "a": "Daler Mehndi",
+          "y": 1995,
+          "yt": "lhVceZE1lf4",
+          "ytTitle": "Bolo Ta Ra Ra (Lyrical) Daler Mehndi | Punjabi Pop Song | Superhit Punjabi Party Song",
+          "channel": "Daler Mehndi",
+          "dur": 309
+        },
+        {
+          "t": "Aankh Marey",
+          "f": "Simmba",
+          "y": 2018,
+          "yt": "_KhQT-LGb-4",
+          "ytTitle": "SIMMBA: Aankh Marey | Ranveer Singh, Sara Ali Khan | Tanishk Bagchi,Mika Singh,Neha Kakkar,  Kumar S",
+          "channel": "T-Series",
+          "dur": 203
+        },
+        {
+          "t": "Munni Badnaam Hui",
+          "f": "Dabangg",
+          "y": 2010,
+          "yt": "Jn5hsfbhWx4",
+          "ytTitle": "Munni Badnaam Hui Full Song | Feat. Malaika Arora | Dabangg | Salman Khan",
+          "channel": "T-Series",
+          "dur": 294
+        },
+        {
+          "t": "Sheila Ki Jawani",
+          "f": "Tees Maar Khan",
+          "y": 2010,
+          "yt": "ITD8Lkp4PLo",
+          "ytTitle": "Sheila Ki Jawani 8K Full Song | Katrina Kaif | Akshay Kumar | Tees Maar Khan | Vishal D | Sunidhi",
+          "channel": "T-Series",
+          "dur": 282
+        },
+        {
+          "t": "Chikni Chameli",
+          "f": "Agneepath",
+          "y": 2012,
+          "yt": "QcQpqWhTBCE",
+          "ytTitle": "Chikni Chameli - 8K/4k Music Video | Katrina Kaif, Hrithik | Agneepath | Shreya Ghoshal | Ajay-Atul",
+          "channel": "Sony Music India",
+          "dur": 330
+        },
+        {
+          "t": "Lungi Dance",
+          "f": "Chennai Express",
+          "y": 2013,
+          "yt": "69CEiHfS_mc",
+          "ytTitle": "Lungi Dance | Chennai Express | New Video Feat. Honey Singh, Shahrukh Khan, Deepika Paudkone",
+          "channel": "T-Series",
+          "dur": 212
+        },
+        {
+          "t": "Abhi Toh Party Shuru Hui Hai",
+          "f": "Khoobsurat",
+          "y": 2014,
+          "yt": "mPMcSc5bvkc",
+          "ytTitle": "Abhi Toh Party Shuru Hui Hai 8K Video: Badshah | Sonam Kapoor | Aastha | Khoobsurat | Dance Song",
+          "channel": "T-Series",
+          "dur": 174
+        },
+        {
+          "t": "Tamma Tamma Loge",
+          "f": "Thanedaar",
+          "y": 1990,
+          "yt": "Xs5k7d6kzh8",
+          "ytTitle": "Tamma Tamma Loge (4K) Video Song | Thanedaar | Bappi Lahiri, Anuradha Paudwal | Sanjay Dutt, Madhuri",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 475
+        },
+        {
+          "t": "Saturday Saturday",
+          "f": "Humpty Sharma Ki Dulhania",
+          "y": 2014,
+          "yt": "OljkSVLIt6c",
+          "ytTitle": "Saturday Saturday - Full Song | Badshah, Akriti K | Varun, Alia | Humpty Sharma Ki Dulhania",
+          "channel": "Sony Music India",
+          "dur": 214
+        }
+      ]
+    },
+    {
+      "slug": "chai-tapri",
+      "name": "Chai Tapri",
+      "hi": "चाय टपरी",
+      "tagline": "Golden hour, cutting chai",
+      "blurb": "Steel glasses, plastic stools, one kettle that has never been washed and gossip that solves nothing and everything. The sun is going down behind the flyover and nobody has anywhere to be for twenty more minutes.",
+      "art": "chai",
+      "accent": "#c96f2c",
+      "accent2": "#e8a33d",
+      "hours": [
+        16,
+        17,
+        18
+      ],
+      "songs": [
+        {
+          "t": "Kabira",
+          "f": "Yeh Jawaani Hai Deewani",
+          "y": 2013,
+          "yt": "CyLDe7rw48w",
+          "ytTitle": "Lyrical: Kabira | Yeh Jawaani Hai Deewani | Ranbir Kapoor, Deepika Padukone | Pritam",
+          "channel": "T-Series",
+          "dur": 223
+        },
+        {
+          "t": "Ilahi",
+          "f": "Yeh Jawaani Hai Deewani",
+          "y": 2013,
+          "q": "Ilahi full video song Yeh Jawaani Hai Deewani Arijit Singh Ranbir",
+          "yt": "V3NHpNmYY8U",
+          "ytTitle": "Ilahi 8K Video Song | Ranbir Kapoor, Arijit Singh | Yeh Jawaani Hai Deewani | Pritam, Amitabh B",
+          "channel": "T-Series",
+          "dur": 206
+        },
+        {
+          "t": "Phir Le Aaya Dil",
+          "f": "Barfi!",
+          "y": 2012,
+          "yt": "2AO2Utn2eoU",
+          "ytTitle": "Phir Le Aya Dil - Lyrical Video | Rekha Bhardwaj | Ranbir, Priyanka, Ileana D'Cruz | Pritam | Barfi",
+          "channel": "Sony Music India",
+          "dur": 283
+        },
+        {
+          "t": "Iktara",
+          "f": "Wake Up Sid",
+          "y": 2009,
+          "yt": "ZlOZktsODpA",
+          "ytTitle": "Iktara Lyric Video - Wake Up Sid | Ranbir Kapoor, Konkona Sen Sharma | Kavita Seth | Amit Trivedi",
+          "channel": "Sony Music India",
+          "dur": 254
+        },
+        {
+          "t": "Behti Hawa Sa Tha Woh",
+          "f": "3 Idiots",
+          "y": 2009,
+          "yt": "ewvddSUEONQ",
+          "ytTitle": "Behti Hawa Sa Tha Woh – 3 Idiots | Aamir Khan, Madhavan, Sharman J | Shaan & Shantanu M | Swanand K",
+          "channel": "Zee Music Company",
+          "dur": 314
+        },
+        {
+          "t": "Khoya Khoya Chand",
+          "f": "Kala Bazar",
+          "y": 1960,
+          "yt": "CY3RSNlZ2JA",
+          "ytTitle": "Khoya Khoya Chand Khula Aasman | Kala Bazar | Mohammed Rafi Songs | Dev Anand | Waheeda Rehman",
+          "channel": "Saregama Carvaan",
+          "dur": 286
+        },
+        {
+          "t": "Tum Ho Toh",
+          "f": "Rock On!!",
+          "y": 2008,
+          "yt": "poYtscS7bto",
+          "ytTitle": "Lyrical: Tum Ho Toh | Rock On | Arjun Rampal, Farhan Akhtar | Shankar-Ehsaan-Loy",
+          "channel": "T-Series",
+          "dur": 271
+        },
+        {
+          "t": "Masakali",
+          "f": "Delhi-6",
+          "y": 2009,
+          "yt": "SS3lIQdKP-A",
+          "ytTitle": "Full Video: Masakali | Delhi 6 | Abhishek Bachchan, Sonam Kapoor | A.R. Rahman |  Mohit Chauhan",
+          "channel": "T-Series",
+          "dur": 238
+        },
+        {
+          "t": "Nadaan Parindey",
+          "f": "Rockstar",
+          "y": 2011,
+          "yt": "PSxYv2F_xN8",
+          "ytTitle": "Ik Vaari Aa/Nadaan Parindey/Tum Ho Toh | Shirley Setia,Jubin Nautiyal Abhijit V | Bhushan K Ahmed K",
+          "channel": "T-Series",
+          "dur": 307
+        },
+        {
+          "t": "Bandeh",
+          "f": "Black Friday",
+          "y": 2004,
+          "a": "Indian Ocean",
+          "yt": "R5LNFXeceIo",
+          "ytTitle": "Bandeh | Lyrical Video | Indian  Ocean | Black Friday",
+          "channel": "Times Music",
+          "dur": 495
+        },
+        {
+          "t": "Ma Rewa",
+          "a": "Indian Ocean",
+          "yt": "7PjhzL-27jw",
+          "ytTitle": "Ma Rewa | Lyrical Video | Indian Ocean | Kandisa",
+          "channel": "Times Music",
+          "dur": 426
+        },
+        {
+          "t": "Ek Garam Chai Ki Pyali Ho",
+          "q": "Ek Garam Chai Ki Pyali Ho Kishore Kumar old hindi song",
+          "yt": "MVe4hjjhu0g",
+          "ytTitle": "Ek Garam Chai Ki Pyali Ho DJ RHT Remix || DJ's OF MUMBAI ||",
+          "channel": "DJ's Of Mumbai",
+          "dur": 199
+        }
+      ]
+    },
+    {
+      "slug": "gym-wala",
+      "name": "Gym Wala",
+      "hi": "जिम वाला",
+      "tagline": "Last set, no spotter",
+      "blurb": "Basement gym, one mirror wall, rusted plates and a trainer named Pehelwan ji. The playlist has exactly one job and it does it without subtlety.",
+      "art": "gym",
+      "accent": "#d63b2f",
+      "accent2": "#222831",
+      "hours": [
+        5,
+        6,
+        7,
+        19,
+        20
+      ],
+      "songs": [
+        {
+          "t": "Sultan Title Track",
+          "f": "Sultan",
+          "y": 2016,
+          "yt": "abiL84EAWSY",
+          "ytTitle": "Sultan Title Song | Salman Khan, Anushka Sharma | Sukhwinder Singh, Shadab Faridi, Vishal & Shekhar",
+          "channel": "YRF",
+          "dur": 253
+        },
+        {
+          "t": "Brothers Anthem",
+          "f": "Brothers",
+          "y": 2015,
+          "yt": "lcs_GXu8IA0",
+          "ytTitle": "Brothers Anthem Lyric Video - Brothers | Akshay Kumar | Sidharth Malhotra",
+          "channel": "Sony Music India",
+          "dur": 355
+        },
+        {
+          "t": "Zinda",
+          "f": "Bhaag Milkha Bhaag",
+          "y": 2013,
+          "yt": "Ax0G_P2dSBw",
+          "ytTitle": "Zinda Lyric Video - Bhaag Milkha Bhaag|Farhan Akhtar|Siddharth Mahadevan|Prasoon Joshi",
+          "channel": "Sony Music India",
+          "dur": 210
+        },
+        {
+          "t": "Ziddi Dil",
+          "f": "Mary Kom",
+          "y": 2014,
+          "yt": "J6qhLhByWzQ",
+          "ytTitle": "Ziddi Dil - Lyrical Video | Mary Kom | Vishal Dadlani | Priyanka Chopra | HD",
+          "channel": "Zee Music Company",
+          "dur": 292
+        },
+        {
+          "t": "Malang",
+          "f": "Dhoom 3",
+          "y": 2013,
+          "yt": "SxoTAvwCr4A",
+          "ytTitle": "Malang Song | DHOOM:3 | Aamir Khan, Katrina Kaif | Siddharth Mahadevan, Shilpa Rao, Pritam, Sameer",
+          "channel": "YRF",
+          "dur": 341
+        },
+        {
+          "t": "Khalibali",
+          "f": "Padmaavat",
+          "y": 2018,
+          "yt": "v7K4vGYL9zI",
+          "ytTitle": "Padmaavat: Khalibali - Ranveer Singh | Deepika Padukone | Shahid Kapoor | Shivam Pathak",
+          "channel": "T-Series",
+          "dur": 204
+        },
+        {
+          "t": "Sher Aaya Sher",
+          "f": "Gully Boy",
+          "y": 2019,
+          "yt": "M81wneSjQbA",
+          "ytTitle": "Sher Aaya Sher | Gully Boy | Siddhant Chaturvedi | Ranveer Singh & Alia Bhatt | DIVINE",
+          "channel": "Zee Music Company",
+          "dur": 128
+        },
+        {
+          "t": "Apna Time Aayega",
+          "f": "Gully Boy",
+          "y": 2019,
+          "yt": "jFGKJBPFdUA",
+          "ytTitle": "Apna Time Aayega | Gully Boy | Ranveer Singh & Alia Bhatt | DIVINE | Dub Sharma | Zoya Akhtar",
+          "channel": "Zee Music Company",
+          "dur": 131
+        },
+        {
+          "t": "Dangal Title Track",
+          "f": "Dangal",
+          "y": 2016,
+          "yt": "l99GHZJQldo",
+          "ytTitle": "Dangal Title Track | Dangal | Aamir Khan | Motivational Hindi Song | Pritam | Amitabh Bhattacharya",
+          "channel": "IT'S VIKRAM",
+          "dur": 166
+        },
+        {
+          "t": "Get Ready To Fight",
+          "f": "Baaghi",
+          "y": 2016,
+          "yt": "h6aGikIL-I4",
+          "ytTitle": "Get Ready To Fight Full Video Song | BAAGHI | Tiger Shroff, Grandmaster Shifuji | Benny Dayal",
+          "channel": "T-Series",
+          "dur": 138
+        },
+        {
+          "t": "Bhaag DK Bose",
+          "f": "Delhi Belly",
+          "y": 2011,
+          "yt": "IQEDu8SPHao",
+          "ytTitle": "BHAAG DK BOSE I DELHI BELLY I RAM SAMPATH",
+          "channel": "RAM SAMPATH",
+          "dur": 191
+        },
+        {
+          "t": "Chak Lein De",
+          "f": "Chandni Chowk To China",
+          "y": 2009,
+          "yt": "kd-6aw99DpA",
+          "ytTitle": "Full Video: \"Chak Lein De\" | Chandni Chowk To China | Akshay Kumar, Deepika Padukone | Kailash Kher",
+          "channel": "T-Series",
+          "dur": 263
+        }
+      ]
+    },
+    {
+      "slug": "shaadi-wala",
+      "name": "Shaadi Wala",
+      "hi": "शादी वाला",
+      "tagline": "Baraat is not moving",
+      "blurb": "Generator lights, a dhol that started at four in the afternoon, and every uncle convinced the floor is his. The baraat has covered forty metres in an hour and a half. Nobody is complaining.",
+      "art": "shaadi",
+      "accent": "#e0206c",
+      "accent2": "#f2b134",
+      "hours": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "songs": [
+        {
+          "t": "Didi Tera Devar Deewana",
+          "f": "Hum Aapke Hain Koun..!",
+          "y": 1994,
+          "yt": "ZqcDGvCM_w0",
+          "ytTitle": "Didi Tera Devar Deewana Full Song | Salman Khan, Madhuri Dixit, Lata Mangeshkar |Hum Aapke Hain Koun",
+          "channel": "Rajshri",
+          "dur": 459
+        },
+        {
+          "t": "Mehndi Laga Ke Rakhna",
+          "f": "Dilwale Dulhania Le Jayenge",
+          "y": 1995,
+          "yt": "-bNwqXvMuB8",
+          "ytTitle": "Mehndi Laga Ke Rakhna Song | Dilwale Dulhania Le Jayenge | Shah Rukh Khan, Kajol | Lata, Udit | DDLJ",
+          "channel": "YRF",
+          "dur": 281
+        },
+        {
+          "t": "Bole Chudiyan",
+          "f": "Kabhi Khushi Kabhie Gham",
+          "y": 2001,
+          "yt": "IBvg3WeqP1U",
+          "ytTitle": "Bole Chudiyan Full Video - K3G | Amitabh, Shah Rukh, Kajol, Kareena, Hrithik | Udit Narayan",
+          "channel": "Sony Music India",
+          "dur": 404
+        },
+        {
+          "t": "Aaj Mere Yaar Ki Shaadi Hai",
+          "f": "Aadmi Sadak Ka",
+          "y": 1977,
+          "yt": "p7qyXe05RIM",
+          "ytTitle": "Aaj Mere Yaar Ki Shaadi Hai with Lyrics |आज मेरे यार के शादी है के बोल | Aadmi Sadak Ka",
+          "channel": "Saregama Music",
+          "dur": 313
+        },
+        {
+          "t": "London Thumakda",
+          "f": "Queen",
+          "y": 2014,
+          "yt": "udra3Mfw2oo",
+          "ytTitle": "Queen: London Thumakda Full Video Song | Kangana Ranaut, Raj Kumar Rao",
+          "channel": "T-Series",
+          "dur": 215
+        },
+        {
+          "t": "Nagada Sang Dhol",
+          "f": "Goliyon Ki Raasleela Ram-Leela",
+          "y": 2013,
+          "yt": "3X7x4Ye-tqo",
+          "ytTitle": "Nagada Sang Dhol | Deepika Padukone | Ranveer Singh | Ram-Leela | Shreya Ghoshal | Osman Mir",
+          "channel": "Sony Music India",
+          "dur": 271
+        },
+        {
+          "t": "Gallan Goodiyaan",
+          "f": "Dil Dhadakne Do",
+          "y": 2015,
+          "yt": "T577v-kISIU",
+          "ytTitle": "'Gallan Goodiyaan' Full Song (Audio) | Dil Dhadakne Do | T-Series",
+          "channel": "T-Series",
+          "dur": 297
+        },
+        {
+          "t": "Saajanji Ghar Aaye",
+          "f": "Kuch Kuch Hota Hai",
+          "y": 1998,
+          "yt": "8XtXLVylOoU",
+          "ytTitle": "Saajanji Ghar Aaye Full Video - Kuch Kuch Hota Hai|Shah Rukh Khan,Kajol|Alka Yagnik",
+          "channel": "Sony Music India",
+          "dur": 416
+        },
+        {
+          "t": "Dulhe Ka Sehra",
+          "f": "Dhadkan",
+          "y": 2000,
+          "yt": "iZAv9zDeFSc",
+          "ytTitle": "Dulhe Ka Sehra | #AkshayKumar & #ShilpaShetty | Dhadkan | Ishtar Music",
+          "channel": "Ishtar Music",
+          "dur": 469
+        },
+        {
+          "t": "Chunari Chunari",
+          "f": "Biwi No.1",
+          "y": 1999,
+          "yt": "mp3mb80kQJU",
+          "ytTitle": "Chunari Chunari | Salman Khan | Sushmita Sen | Abhijeet Bhattacharya | Anuradha Sriram | Biwi No.1",
+          "channel": "90s Bollywood Lounge",
+          "dur": 314
+        },
+        {
+          "t": "Kajra Re",
+          "f": "Bunty Aur Babli",
+          "y": 2005,
+          "yt": "4dsFQFCvVGU",
+          "ytTitle": "Kajra Re | Full Song | Bunty Aur Babli | Aishwarya, Abhishek, Amitabh Bachchan | Shankar-Ehsaan-Loy",
+          "channel": "YRF",
+          "dur": 475
+        },
+        {
+          "t": "Wah Wah Ramji",
+          "f": "Hum Aapke Hain Koun..!",
+          "y": 1994,
+          "yt": "o1tIvfplhHc",
+          "ytTitle": "Wah Wah Ramji - Hindi Lyrics | Hum Aapke Hain Koun | Salman Khan | Madhuri Dixit | Lata & SPB Hits",
+          "channel": "Bollywood Classics",
+          "dur": 246
+        }
+      ]
+    },
+    {
+      "slug": "dhaba-wala",
+      "name": "Dhaba Wala",
+      "hi": "ढाबा वाला",
+      "tagline": "Charpai, dal makhani, 1am",
+      "blurb": "Somewhere on GT Road. String lights, a tandoor still going, charpais laid out in the gravel. Punjabi at a volume that carries to the next dhaba, which is playing the same song.",
+      "art": "dhaba",
+      "accent": "#e07b39",
+      "accent2": "#1c8a4a",
+      "hours": [
+        21,
+        22,
+        23,
+        0,
+        1
+      ],
+      "songs": [
+        {
+          "t": "Mundian To Bach Ke",
+          "a": "Panjabi MC",
+          "y": 1998,
+          "yt": "H2gmeNH_oZ0",
+          "ytTitle": "Mundian Tu Bach Ke | Panjabi MC | Straight Up Punjab",
+          "channel": "Sony Music India",
+          "dur": 234
+        },
+        {
+          "t": "Gur Naal Ishq Mitha",
+          "a": "Malkit Singh",
+          "q": "Gur Nalo Ishq Mitha Malkit Singh original bhangra song",
+          "yt": "_rGz16v3CUM",
+          "ytTitle": "Gur Nalon Ishq Mitha (Official Video) Malaika Arora | Bally Sagoo Ft Malkit Singh | Jas Arora",
+          "channel": "Universal Music India",
+          "dur": 220
+        },
+        {
+          "t": "Jugni",
+          "f": "Cocktail",
+          "y": 2012,
+          "yt": "x_NoA_Fp2Rc",
+          "ytTitle": "Jugni - Full Video Song | Cocktail | Saif Ai Khan, Deepika Padukone & Diana Penty | Pritam",
+          "channel": "Sony Music India",
+          "dur": 365
+        },
+        {
+          "t": "Sadi Gali",
+          "f": "Tanu Weds Manu",
+          "y": 2011,
+          "yt": "w_HaezV0DqI",
+          "ytTitle": "Sadi Gali Full Song Tanu Weds Manu | Ft. Kangna Ranaut, R Madhavan",
+          "channel": "T-Series",
+          "dur": 217
+        },
+        {
+          "t": "Kala Chashma",
+          "f": "Baar Baar Dekho",
+          "y": 2016,
+          "yt": "4WRJHbL4dAk",
+          "ytTitle": "Kala Chashma - Full Video| Baar Baar Dekho| Sidharth Katrina | Prem Hardeep Kam Badshah Neha Indeep",
+          "channel": "Zee Music Company",
+          "dur": 199
+        },
+        {
+          "t": "Patiala Peg",
+          "a": "Diljit Dosanjh",
+          "y": 2015,
+          "yt": "VL2mdsJ1TrI",
+          "ytTitle": "Patiala Peg (Lyrical) | Diljit Dosanjh | Diljott | Veet Baljit | Latest Punjabi Songs 2020",
+          "channel": "Speed Records",
+          "dur": 196
+        },
+        {
+          "t": "Laembadgini",
+          "a": "Diljit Dosanjh",
+          "y": 2016,
+          "yt": "15Sjjl_24x0",
+          "ytTitle": "Laembadgini (Full Song) | Diljit Dosanjh | Veet Baljit | Latest Punjabi Songs 2016 | Speed Records",
+          "channel": "Speed Records",
+          "dur": 339
+        },
+        {
+          "t": "Do You Know",
+          "a": "Diljit Dosanjh",
+          "y": 2011,
+          "q": "Do You Know Diljit Dosanjh full punjabi song album",
+          "yt": "DT9fEmSL_Lw",
+          "ytTitle": "Diljit Dosanjh: Do You Know Lyric Video | Latest Punjabi Song",
+          "channel": "Diljit Dosanjh",
+          "dur": 220
+        },
+        {
+          "t": "High Rated Gabru",
+          "a": "Guru Randhawa",
+          "y": 2017,
+          "yt": "hjWf8A0YNSE",
+          "ytTitle": "Guru Randhawa: High Rated Gabru Official Song | DirectorGifty | Bhushan Kumar | T-Series",
+          "channel": "T-Series",
+          "dur": 217
+        },
+        {
+          "t": "Lamberghini",
+          "a": "The Doorbeen",
+          "y": 2018,
+          "yt": "5X7WWVTrBvM",
+          "ytTitle": "Lamberghini (Full Video) | The Doorbeen Feat Ragini | Latest Punjabi Song 2018 | Speed Records",
+          "channel": "Speed Records",
+          "dur": 218
+        },
+        {
+          "t": "Brown Munde",
+          "a": "AP Dhillon",
+          "y": 2020,
+          "yt": "VNs_cCtdbPc",
+          "ytTitle": "BROWN MUNDE - AP DHILLON | GURINDER GILL | SHINDA KAHLON (Official Music Video)",
+          "channel": "APDHILLON",
+          "dur": 268
+        },
+        {
+          "t": "Yaar Anmulle",
+          "a": "Sharry Mann",
+          "y": 2011,
+          "yt": "6ZVcYC4yLfk",
+          "ytTitle": "Yaar Anmulle (Full Video) | Sharry Mann | Latest Punjabi Songs 2020 | Speed Records",
+          "channel": "Speed Records",
+          "dur": 264
+        }
+      ]
+    },
+    {
+      "slug": "paan-wala",
+      "name": "Paan Wala",
+      "hi": "पान वाला",
+      "tagline": "Meetha, extra gulkand",
+      "blurb": "A glass case of silver leaf and supari, a transistor on the shelf, and a queue of three men who came for cigarettes and stayed for the argument. Pure eighties masala, no apologies.",
+      "art": "paan",
+      "accent": "#1c8a4a",
+      "accent2": "#e0483a",
+      "hours": [
+        20,
+        21,
+        22
+      ],
+      "songs": [
+        {
+          "t": "Khaike Paan Banaraswala",
+          "f": "Don",
+          "y": 1978,
+          "yt": "6KuC1tHpWSA",
+          "ytTitle": "Khaike Paan Banaraswala [4K 2160p & 1080p] Full Song - Don (2006)",
+          "channel": "TrueHD 2160p",
+          "dur": 316
+        },
+        {
+          "t": "I Am A Disco Dancer",
+          "f": "Disco Dancer",
+          "y": 1982,
+          "yt": "d89cCzUIxpQ",
+          "ytTitle": "I Am A Disco Dancer with lyrics | आय ऍम अ डिस्को डांसर के बोल | Disco Dancer | Vijay Benedict|Mithun",
+          "channel": "Saregama Music",
+          "dur": 497
+        },
+        {
+          "t": "Jimmy Jimmy Aaja",
+          "f": "Disco Dancer",
+          "y": 1982,
+          "yt": "fRSLPx0HSvw",
+          "ytTitle": "Jimmy Jimmy Aaja - Full Song (HQ) | Parvati Khan | Mithun Chakraborty | Disco Dancer [1982]",
+          "channel": "Saregama Music",
+          "dur": 186
+        },
+        {
+          "t": "Ui Amma Ui Amma",
+          "f": "Mawaali",
+          "y": 1983,
+          "yt": "4SDByrbSTQg",
+          "ytTitle": "Ui Amma Ui Amma Pakdi Gayi | Mahendra Kapoor, Mahesh | Mithun Chakraborty, Sarika",
+          "channel": "Filmi Gaane Sune Ansune",
+          "dur": 296
+        },
+        {
+          "t": "Aap Jaisa Koi",
+          "f": "Qurbani",
+          "y": 1980,
+          "yt": "1jf5kuvScJc",
+          "ytTitle": "Aap Jaisa Koi (Official Lyric Video) - Nazia Hassan | Feroz Khan, Zeenat Aman | Qurbani | Hindi Song",
+          "channel": "Universal Music India",
+          "dur": 218
+        },
+        {
+          "t": "Jawani Janeman",
+          "f": "Namak Halaal",
+          "y": 1982,
+          "yt": "K67_4DQr94g",
+          "ytTitle": "Jawani Janeman ( Lyrical ) | Asha Bhosle | Amitabh Bachan | Smita Patil | Namak Halaal",
+          "channel": "Saregama Music",
+          "dur": 353
+        },
+        {
+          "t": "Pag Ghungroo Baandh",
+          "f": "Namak Halaal",
+          "y": 1982,
+          "yt": "YTfL4RB1pj4",
+          "ytTitle": "Pag Ghungroo Baandh | Lyrical | Namak Halaal | Amitabh Bachchan | Smita Patil, Shashi Kapoor",
+          "channel": "Saregama Music",
+          "dur": 555
+        },
+        {
+          "t": "Ek Do Teen",
+          "f": "Tezaab",
+          "y": 1988,
+          "yt": "dx57HiK1wUg",
+          "ytTitle": "'Ek Do Teen Char' Full Video Song - Tezaab | Alka Yagnik | Javed Akhtar | Madhuri Dixit, Anil Kapoor",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 449
+        },
+        {
+          "t": "Papa Kehte Hain",
+          "f": "Qayamat Se Qayamat Tak",
+          "y": 1988,
+          "yt": "FEvBiayarlc",
+          "ytTitle": "Papa Kehte Hain Bada Naam Karega -Video Song | Qayamat Se Qayamat Tak | Udit Narayan | Aamir Khan",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 367
+        },
+        {
+          "t": "Tirchi Topiwale",
+          "f": "Tridev",
+          "y": 1989,
+          "yt": "eYl9i8mH1lI",
+          "ytTitle": "Tirchi Topiwale -Lyrical Video Song | Tridev | Amit Kumar, Sapna Mukherjee | Naseeruddin Shah, Sonam",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 391
+        },
+        {
+          "t": "Oye Oye",
+          "f": "Tridev",
+          "y": 1989,
+          "yt": "GKHtybylaSM",
+          "ytTitle": "Ooye Ooye Oaa Full Video Song | Tridev | Amit Kumar, Udit Narayan, Joli Mukherjee | Madhuri Dixit",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 371
+        },
+        {
+          "t": "Yaad Aa Raha Hai",
+          "f": "Disco Dancer",
+          "y": 1982,
+          "yt": "yl8R4gvVMkg",
+          "ytTitle": "Yaad Aa Raha Hai | Bappi Lahiri | Mithun Chakraborty | Disco Dancer [1982]",
+          "channel": "Saregama Music",
+          "dur": 383
+        }
+      ]
+    },
+    {
+      "slug": "mandir-wala",
+      "name": "Mandir Wala",
+      "hi": "मंदिर वाला",
+      "tagline": "5am, bell and loudspeaker",
+      "blurb": "Before the traffic starts. A bell, a conch, agarbatti smoke and a horn speaker on a pole that the whole colony can hear whether it wants to or not.",
+      "art": "mandir",
+      "accent": "#e8931f",
+      "accent2": "#c0392b",
+      "hours": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "songs": [
+        {
+          "t": "Om Jai Jagdish Hare",
+          "q": "Om Jai Jagdish Hare aarti",
+          "yt": "NE3SWh9_vR4",
+          "ytTitle": "OM JAI JAGDISH HARE Aarti with Hindi English Lyrics By Anuradha Paudwal I LYRICAL VIDEO I Aartiyan",
+          "channel": "T-Series Bhakti Sagar",
+          "dur": 336
+        },
+        {
+          "t": "Achyutam Keshavam",
+          "a": "Bhajan",
+          "yt": "1JKuv-OWpM8",
+          "ytTitle": "ACHYUTAM KESHAVAM KRISHNA DAMODARAM | VERY BEAUTIFUL SONG - POPULAR KRISHNA BHAJAN ( FULL SONG )",
+          "channel": "Krishna Ram 16k",
+          "dur": 420
+        },
+        {
+          "t": "Hanuman Chalisa",
+          "a": "Hariharan",
+          "q": "Shree Hanuman Chalisa Hariharan Gulshan Kumar",
+          "yt": "HSmjdnH8gQs",
+          "ytTitle": "श्री हनुमान चालीसा Shree Hanuman Chalisa I GULSHAN KUMAR I HARIHARAN I Morning Hanuman Ji Ka Bhajan",
+          "channel": "T-Series Bhakti Sagar",
+          "dur": 587
+        },
+        {
+          "t": "Gayatri Mantra",
+          "a": "Anuradha Paudwal",
+          "yt": "STbqoRBmK1w",
+          "ytTitle": "Gayatri Mantra  (Official Lyric Video) | Anuradha Paudwal | Gayatri By Anuradha Paudwal",
+          "channel": "Universal Music India",
+          "dur": 514
+        },
+        {
+          "t": "Aisi Lagi Lagan",
+          "a": "Anup Jalota",
+          "yt": "Aq4tPWSi70Y",
+          "ytTitle": "Aisi Lagi Lagan with Lyrics- ऐसी लागी लगन मीरा हो गई मगन | ANUP JALOTA | Most Popular Krishna Bhajan",
+          "channel": "Hare Krishna",
+          "dur": 468
+        },
+        {
+          "t": "Jai Ganesh Deva",
+          "q": "Jai Ganesh Deva aarti",
+          "yt": "Yuex2EnsGiY",
+          "ytTitle": "Ganesh Aarti, JAI GANESH DEVA by Anuradha Paudwal with Hindi, English LyricsI I Full Video Song",
+          "channel": "T-Series Bhakti Sagar",
+          "dur": 277
+        },
+        {
+          "t": "Sukhkarta Dukhharta",
+          "q": "Sukhkarta Dukhharta Ganpati aarti",
+          "yt": "gFr5p5AyuD0",
+          "ytTitle": "Sukhkarta Dukhharta | Ganpati Aarti For Prosperity & Success | Marathi Devotional Song",
+          "channel": "Rajshri Soul",
+          "dur": 120
+        },
+        {
+          "t": "Raghupati Raghav Raja Ram",
+          "q": "Raghupati Raghav Raja Ram bhajan",
+          "yt": "nlTjtcyDgzI",
+          "ytTitle": "Raghupati Raghav Raja Ram Lyrical Video | Ashit Desai | Mahatma Gandhi Songs | Independence Day",
+          "channel": "Times Music Spiritual",
+          "dur": 255
+        },
+        {
+          "t": "Vaishnav Jan To",
+          "q": "Vaishnav Jan To Tene Kahiye bhajan",
+          "yt": "Ljaubljbw8s",
+          "ytTitle": "Vaishnav Jan To Tene Kahiye Je - Lata Mangeshkar, Anup Jalota",
+          "channel": "Universal Music India",
+          "dur": 257
+        },
+        {
+          "t": "Man Tarpat Hari Darshan Ko Aaj",
+          "f": "Baiju Bawra",
+          "y": 1952,
+          "q": "Man Tarpat Hari Darshan Ko Aaj Mohammed Rafi Baiju Bawra",
+          "yt": "tz7C0MEaMfQ",
+          "ytTitle": "man tarpat hai hari darshan ko aaj_ Baiju Bawra1952_Bharat Bh& Meena K_Rafi_ Shakeel_Naushad_a trib.",
+          "channel": "mastkalandr",
+          "dur": 387
+        },
+        {
+          "t": "Allah Tero Naam",
+          "f": "Hum Dono",
+          "y": 1961,
+          "q": "Allah Tero Naam Ishwar Tero Naam Lata Mangeshkar Hum Dono original",
+          "yt": "f-ERhzkxgEs",
+          "ytTitle": "Allah Tero Naam, Ishwar Tero Naam | Lata Mangeshkar | Superhit Song | Hum Dono 1961",
+          "channel": "Navsaar Movies",
+          "dur": 206
+        },
+        {
+          "t": "Tu Pyar Ka Sagar Hai",
+          "f": "Seema",
+          "y": 1955,
+          "yt": "A0vQwBsjCA4",
+          "ytTitle": "Tu Pyar Ka Sagar Hai with lyrics | तू प्यार का सागर है के बोल | Manna Dey | Seema | Nutan",
+          "channel": "Saregama Music",
+          "dur": 280
+        }
+      ]
+    },
+    {
+      "slug": "qawwali-wala",
+      "name": "Qawwali Wala",
+      "hi": "कव्वाली वाला",
+      "tagline": "Dargah courtyard, after Isha",
+      "blurb": "Harmonium, tabla, and eight men clapping on the off-beat until the courtyard gives in. It starts slow. It does not stay slow.",
+      "art": "qawwali",
+      "accent": "#2f6f6b",
+      "accent2": "#d9a441",
+      "hours": [
+        21,
+        22,
+        23,
+        0
+      ],
+      "songs": [
+        {
+          "t": "Dama Dam Mast Qalandar",
+          "a": "Nusrat Fateh Ali Khan",
+          "q": "Dam Mast Qalandar Mast Mast Nusrat Fateh Ali Khan qawwali",
+          "yt": "94QB7xfOkqM",
+          "ytTitle": "Dam Mast Qalandar Mast Mast - Ustad Nusrat Fateh Ali Khan - OSA Official HD Video",
+          "channel": "Oriental Star Agencies Ltd",
+          "dur": 527
+        },
+        {
+          "t": "Tumhe Dillagi",
+          "a": "Nusrat Fateh Ali Khan",
+          "q": "Tumhe Dillagi Bhool Jani Padegi Nusrat Fateh Ali Khan original qawwali",
+          "yt": "nnmohIJ8imk",
+          "ytTitle": "Tumhein Dillagi Bhool Jani Paray Gi | Nusrat Fateh Ali Khan | Lyrical Qawwali |",
+          "channel": "Naveed Writes",
+          "dur": 663
+        },
+        {
+          "t": "Afreen Afreen",
+          "a": "Nusrat Fateh Ali Khan",
+          "yt": "2F7G9bOIwlk",
+          "ytTitle": "Afreen Afreen with lyrics ▶ Nusrat Fateh Ali Khan |आफरीन आफरीन\" गानो के बोल | नुसरत फ़तेह अली खान",
+          "channel": "Saregama Music",
+          "dur": 361
+        },
+        {
+          "t": "Sanson Ki Mala Pe",
+          "a": "Nusrat Fateh Ali Khan",
+          "yt": "FipKi--TvlY",
+          "ytTitle": "Sanson Ki Mala Pe (Lyrics) - Nusrat Fateh Ali Khan",
+          "channel": "HS Lyrics",
+          "dur": 282
+        },
+        {
+          "t": "Bhar Do Jholi Meri",
+          "f": "Bajrangi Bhaijaan",
+          "y": 2015,
+          "yt": "zk0-f92gg9A",
+          "ytTitle": "'Bhar Do Jholi Meri' FULL VIDEO Song - Adnan Sami | Bajrangi Bhaijaan | Salman Khan Pritam",
+          "channel": "T-Series",
+          "dur": 405
+        },
+        {
+          "t": "Kun Faya Kun",
+          "f": "Rockstar",
+          "y": 2011,
+          "yt": "T94PHkuydcw",
+          "ytTitle": "ROCKSTAR: Kun Faya Kun (Full Video Song) | Ranbir Kapoor | A.R. Rahman, Javed Ali, Mohit Chauhan",
+          "channel": "T-Series",
+          "dur": 381
+        },
+        {
+          "t": "Khwaja Mere Khwaja",
+          "f": "Jodhaa Akbar",
+          "y": 2008,
+          "yt": "PQU_oFdYRvA",
+          "ytTitle": "Khwaja Mere Khwaja Lyric Video - Jodhaa Akbar | A. R. Rahman | Hrithik Roshan | Aishwarya Rai",
+          "channel": "Sony Music India",
+          "dur": 417
+        },
+        {
+          "t": "Piya Haji Ali",
+          "f": "Fiza",
+          "y": 2000,
+          "q": "Piya Haji Ali full song Fiza A R Rahman Srinivas",
+          "yt": "c4uYjMpE1l8",
+          "ytTitle": "Piya Haji Ali Full Video - Fiza | Hrithik Roshan & Jaya Bachchan | A. R. Rahman",
+          "channel": "Tips Official",
+          "dur": 328
+        },
+        {
+          "t": "Arziyan",
+          "f": "Delhi-6",
+          "y": 2009,
+          "yt": "dXdD1_AGBZg",
+          "ytTitle": "Arziyan Lyrical | Delhi 6 | Abhishek Bachchan, Sonam Kapoor | A.R. Rahman | Javed Ali, Kailash Kher",
+          "channel": "T-Series",
+          "dur": 537
+        },
+        {
+          "t": "Parda Hai Parda",
+          "f": "Amar Akbar Anthony",
+          "y": 1977,
+          "yt": "hS3PQnHd9Cg",
+          "ytTitle": "Pardah Hai Pardah (Lyrical Video) | Mohammed Rafi | Amar Akbar Anthony",
+          "channel": "Universal Music India",
+          "dur": 395
+        },
+        {
+          "t": "Hai Agar Dushman",
+          "f": "Hum Kisise Kum Naheen",
+          "y": 1977,
+          "yt": "WDDiDXNd-Ck",
+          "ytTitle": "Hai Agar Dushman - है अगर दुश्मन from Hum Kisise Kum Naheen (1977) by Priyanka Mitra & Vaibhav",
+          "channel": "Hemantkumar Mahale",
+          "dur": 439
+        },
+        {
+          "t": "Tajdar-e-Haram",
+          "a": "Atif Aslam",
+          "q": "Tajdar-e-Haram Atif Aslam Coke Studio Season 8 Episode 1",
+          "yt": "v5kMuy1b8N4",
+          "ytTitle": "Atif Aslam, Tajdar e Haram, Coke Studio Season 8, Episode 1",
+          "channel": "coke studio",
+          "dur": 628
+        }
+      ]
+    },
+    {
+      "slug": "train-wala",
+      "name": "Train Wala",
+      "hi": "ट्रेन वाला",
+      "tagline": "Side upper, 3am, chai",
+      "blurb": "Sleeper class with the window shutter up. Fields going past in the dark, somebody snoring two berths down, and a chaiwala who will come through at exactly the wrong hour. Kishore, mostly.",
+      "art": "train",
+      "accent": "#3b5a7a",
+      "accent2": "#e8a33d",
+      "hours": [
+        23,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "songs": [
+        {
+          "t": "Chaiyya Chaiyya",
+          "f": "Dil Se..",
+          "y": 1998,
+          "yt": "9MX-QejdVaQ",
+          "ytTitle": "Chaiyya Chaiyya",
+          "channel": "Sukhwinder Singh - Topic",
+          "dur": 407
+        },
+        {
+          "t": "Mere Sapno Ki Rani",
+          "f": "Aradhana",
+          "y": 1969,
+          "q": "Mere Sapno Ki Rani Aradhana Kishore Kumar Rajesh Khanna original song",
+          "yt": "Nw7lcCNSYy8",
+          "ytTitle": "Mere Sapnon Ki Rani | Kishore Kumar | Rajesh Khanna | S.D Burman | Aradhana | Audio Song",
+          "channel": "Saregama Music",
+          "dur": 317
+        },
+        {
+          "t": "Gaadi Bula Rahi Hai",
+          "f": "Dost",
+          "y": 1974,
+          "yt": "njnCoN9Qlvw",
+          "ytTitle": "Gaadi Bula Rahi Hai - Lyrical | Kishore Kumar | Dost | Dharmendra & Hema malini | all-time hits song",
+          "channel": "Kishore Kumar Evergreen Hits",
+          "dur": 404
+        },
+        {
+          "t": "Zindagi Ka Safar",
+          "f": "Safar",
+          "y": 1970,
+          "yt": "vLpRfaRiDnk",
+          "ytTitle": "Zindagi Ka Safar with lyrics | ज़िन्दगी का सफर गाने के बोल | Safar | Rajesh Khanna | Sharmila Tagore",
+          "channel": "Saregama Music",
+          "dur": 267
+        },
+        {
+          "t": "Kuch To Log Kahenge",
+          "f": "Amar Prem",
+          "y": 1972,
+          "yt": "X6q7BVZXOUU",
+          "ytTitle": "Kuch To Log Kahenge with lyrics | कुछ तो लोग कहेंगे गाने के बोल | Amar Prem | Rajesh Khanna/Sharmila",
+          "channel": "Saregama Music",
+          "dur": 284
+        },
+        {
+          "t": "Chingari Koi Bhadke",
+          "f": "Amar Prem",
+          "y": 1972,
+          "yt": "VeC9L7XS4og",
+          "ytTitle": "Chingari Koi Bhadke - (Lyrics) | Kishore Kumar | Amar Prem | Rajesh Khanna | Old Hindi Song",
+          "channel": "Kishore Kumar Evergreen Hits",
+          "dur": 338
+        },
+        {
+          "t": "Yeh Shaam Mastani",
+          "f": "Kati Patang",
+          "y": 1970,
+          "yt": "h78lTicDMSo",
+          "ytTitle": "Yeh Shaam Mastani (Lyrics) - Kishore Kumar | Rajesh Khanna | Kati Patang",
+          "channel": "DreamTrax",
+          "dur": 246
+        },
+        {
+          "t": "Diye Jalte Hain",
+          "f": "Namak Haraam",
+          "y": 1973,
+          "yt": "mebhS9WGQvU",
+          "ytTitle": "🌺 Diye Jalte Hain Phool Khilte Hain  Song | Kishore Kumar | Rajesh Khanna, Amitabh | Namak Haraam",
+          "channel": "Ultra Bollywood Songs",
+          "dur": 317
+        },
+        {
+          "t": "Main Shayar Badnaam",
+          "f": "Namak Haraam",
+          "y": 1973,
+          "yt": "kxeks90W250",
+          "ytTitle": "Main Shayar Badnaam with lyrics | मैं शायर बदनाम गाने के बोल | Namak Haraam | Rajesh Khanna, Rekha",
+          "channel": "Saregama Music",
+          "dur": 344
+        },
+        {
+          "t": "O Mere Dil Ke Chain",
+          "f": "Mere Jeevan Saathi",
+          "y": 1972,
+          "yt": "5eyflIV8pzM",
+          "ytTitle": "O Mere Dil Ke Chain | Kishore Kumar | Rajesh Khanna | R.D Burman | Old Hindi Song | Old Is Gold",
+          "channel": "Saregama Music",
+          "dur": 297
+        },
+        {
+          "t": "Raat Kali Ek Khwab Mein Aayi",
+          "f": "Buddha Mil Gaya",
+          "y": 1971,
+          "yt": "XnOA0ZJLUI0",
+          "ytTitle": "Raat Kali Ek Khwab Mein Aayi (HD) | Archana, Navin Nischol | Buddha Mil Gaya (1971) | Kishore Kumar",
+          "channel": "Shemaroo Romantic Songs",
+          "dur": 270
+        },
+        {
+          "t": "Rail Gaadi",
+          "a": "Ashok Kumar",
+          "q": "Rail Gaadi Ashok Kumar song",
+          "yt": "sYSv92i8M58",
+          "ytTitle": "Rail Gaadi Rail Gaadi Chhuk Chhuk Chhuk | Ashok Kumar, Asha Bhosle | Classic Hindi Song",
+          "channel": "Bollywood Sadabahar Song",
+          "dur": 120
+        }
+      ]
+    },
+    {
+      "slug": "barish-wala",
+      "name": "Barish Wala",
+      "hi": "बारिश वाला",
+      "tagline": "First rain, grille open",
+      "blurb": "The smell before it lands, then the sound on the tin awning. Power will go in about four minutes. Somebody is already making pakodas.",
+      "art": "barish",
+      "accent": "#4a7fa5",
+      "accent2": "#7fb069",
+      "hours": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "songs": [
+        {
+          "t": "Rimjhim Gire Sawan",
+          "f": "Manzil",
+          "y": 1979,
+          "yt": "46yS0EW2cCQ",
+          "ytTitle": "Rimjhim Gire Sawan (Female) with lyrics | रिमझिम गिरे सावन गाने के बोल | Manzil | Mousami/Amitabh",
+          "channel": "Saregama Music",
+          "dur": 217
+        },
+        {
+          "t": "Bheegi Bheegi Raaton Mein",
+          "f": "Ajnabee",
+          "y": 1974,
+          "q": "Bheegi Bheegi Raaton Mein Ajnabee Kishore Kumar Lata Mangeshkar 1974",
+          "yt": "A6cImlZd6KE",
+          "ytTitle": "Bheegi Bheegi Raaton Mein (Cover) | Kishore Kumar | Rajesh Khanna | Ajnabee | Sargam",
+          "channel": "Sargam Classic",
+          "dur": 269
+        },
+        {
+          "t": "Ab Ke Sawan",
+          "a": "Shubha Mudgal",
+          "y": 1999,
+          "yt": "QlxIzRDRUyw",
+          "ytTitle": "Ab Ke Saawan (Official Lyric Video) | Shubha Mudgal | Ab Ke Sawan",
+          "channel": "Universal Music India",
+          "dur": 270
+        },
+        {
+          "t": "Barso Re",
+          "f": "Guru",
+          "y": 2007,
+          "yt": "asw-wTDzGUQ",
+          "ytTitle": "Barso Re - Full Video | A.R. Rahman | Shreya Ghoshal | Aishwarya Rai | Uday Mazumdar | Guru",
+          "channel": "Sony Music India",
+          "dur": 283
+        },
+        {
+          "t": "Tip Tip Barsa Paani",
+          "f": "Mohra",
+          "y": 1994,
+          "yt": "HyKuXycQXkg",
+          "ytTitle": "Full 4K Video: Tip Tip Barsa Paani | Mohra (1994) | Akshay Kumar, Raveena Tandon | Udit Narayan",
+          "channel": "Shemaroo 4K Hindi Songs",
+          "dur": 340
+        },
+        {
+          "t": "Kaate Nahi Kat Te",
+          "f": "Mr. India",
+          "y": 1987,
+          "yt": "9FjuBvzF1E4",
+          "ytTitle": "Kate Nahin Kat Te -Video Song | Mr. India | Kishore Kumar, Alisha Chanai | Anil Kapoor, Sridevi",
+          "channel": "T-Series Bollywood Classics",
+          "dur": 391
+        },
+        {
+          "t": "Ghanan Ghanan",
+          "f": "Lagaan",
+          "y": 2001,
+          "yt": "EouiI35p4Hc",
+          "ytTitle": "Ghanan Ghanan - Audio Lyrical | Lagaan | Aamir Khan, Gracy Singh | A.R. Rahman | Alka Yagnik, Udit N",
+          "channel": "Sony Music India",
+          "dur": 364
+        },
+        {
+          "t": "Koi Ladki Hai",
+          "f": "Dil To Pagal Hai",
+          "y": 1997,
+          "yt": "u6bk53x2Kno",
+          "ytTitle": "Koi Ladki Hai Song | Dil To Pagal Hai | Shah Rukh Khan, Madhuri Dixit, Karisma Kapoor | Lata, Udit",
+          "channel": "YRF",
+          "dur": 339
+        },
+        {
+          "t": "Bheegi Bheegi",
+          "f": "Gangster",
+          "y": 2006,
+          "q": "Bheegi Bheegi Gangster James Atif Aslam full song Emraan Kangana",
+          "yt": "yHWPO9DDnsk",
+          "ytTitle": "Bheegi Si Bhaagi Si - Full Video | Ranbir, Katrina | Mohit Chauhan, Antara M | Pritam | Raajneeti",
+          "channel": "Sony Music India",
+          "dur": 258
+        },
+        {
+          "t": "Zara Zara",
+          "f": "Rehnaa Hai Terre Dil Mein",
+          "y": 2001,
+          "yt": "a71xD6RyOok",
+          "ytTitle": "Zara Zara With Lyrics | ज़रा ज़रा | Rehna Hai Tere Dil Mein | R. Madhavan | Bombay Jayashri | RHTDM",
+          "channel": "Saregama Music",
+          "dur": 321
+        },
+        {
+          "t": "Megha Re Megha",
+          "f": "Pyaasa Sawan",
+          "y": 1981,
+          "yt": "TOov2XDl16U",
+          "ytTitle": "Megha Re Megha Re with lyrics |  मेघा रे मेघा रे | Lata Mangeshkar | Suresh Wadkar | Pyaasa Sawan",
+          "channel": "Saregama Music",
+          "dur": 409
+        },
+        {
+          "t": "Lagi Aaj Sawan Ki",
+          "f": "Chandni",
+          "y": 1989,
+          "yt": "qrNbG2W6IRE",
+          "ytTitle": "Lagi Aaj Sawan Ki | Full Song | Chandni | Vinod Khanna, Sridevi | Suresh Wadkar, Anupama Deshpande",
+          "channel": "YRF",
+          "dur": 234
+        }
+      ]
+    },
+    {
+      "slug": "padhai-wala",
+      "name": "Padhai Wala",
+      "hi": "पढ़ाई वाला",
+      "tagline": "Table lamp, 2am, exam in six days",
+      "blurb": "One lamp, one desk, a cold cup of Bournvita and a syllabus that is not going to finish itself. Soft enough to keep going, sad enough to feel like it matters.",
+      "art": "padhai",
+      "accent": "#6b5b95",
+      "accent2": "#e8a33d",
+      "hours": [
+        22,
+        23,
+        0,
+        1,
+        2
+      ],
+      "songs": [
+        {
+          "t": "Tum Ho",
+          "f": "Rockstar",
+          "y": 2011,
+          "yt": "gkCKTuR-ECI",
+          "ytTitle": "Rockstar: Tum Ho (Lyrical Video) Song | Ranbir Kapoor | Nargis | A R Rahman, Mohit Chauhan",
+          "channel": "T-Series",
+          "dur": 322
+        },
+        {
+          "t": "Agar Tum Saath Ho",
+          "f": "Tamasha",
+          "y": 2015,
+          "yt": "Q2S7CDuBTOc",
+          "ytTitle": "Agar Tum Saath Ho Maahi Ve l T-Series Mixtape l Jubin N Prakriti K Abhijit V l Bhushan Kumar Ahmed K",
+          "channel": "T-Series",
+          "dur": 314
+        },
+        {
+          "t": "Khamoshiyan",
+          "f": "Khamoshiyan",
+          "y": 2015,
+          "yt": "2OvZtdwe30s",
+          "ytTitle": "Khamoshiyan Title Track | Arijit Singh | Ali Fazal, Sapna Pabbi, Gurmeet Choudhary | 4K",
+          "channel": "Sony Music India",
+          "dur": 198
+        },
+        {
+          "t": "Tere Bina",
+          "f": "Guru",
+          "y": 2007,
+          "yt": "9JDSGhhiOwI",
+          "ytTitle": "Tere Bina - Full Video | A. R. Rahman | Aishwarya Rai | Abhishek Bachchan | Guru",
+          "channel": "Sony Music India",
+          "dur": 289
+        },
+        {
+          "t": "Luka Chuppi",
+          "f": "Rang De Basanti",
+          "y": 2006,
+          "yt": "WjjKlwt0UNk",
+          "ytTitle": "Luka Chuppi - Lyrical Song | Rang De Basanti | Aamir Khan | Lata Mangeshkar | A.R. Rahman",
+          "channel": "Sony Music India",
+          "dur": 395
+        },
+        {
+          "t": "Ae Ajnabi",
+          "f": "Dil Se..",
+          "y": 1998,
+          "yt": "TdUu05Svkl8",
+          "ytTitle": "Ae Ajnabi Lyrical Song | Dil Se | Shahrukh Khan, Manisha Koirala | Udit Narayan | 90's Hindi Songs",
+          "channel": "Ishtar Music",
+          "dur": 341
+        },
+        {
+          "t": "Naina Da Kya Kasoor",
+          "f": "Andhadhun",
+          "y": 2018,
+          "yt": "zdXiSlRrgWQ",
+          "ytTitle": "Naina Da Kya Kasoor - Full Video | AndhaDhun | Ayushmann Khurrana | Radhika Apte | Amit Trivedi",
+          "channel": "Zee Music Company",
+          "dur": 219
+        },
+        {
+          "t": "Raabta",
+          "f": "Agent Vinod",
+          "y": 2012,
+          "yt": "zlt38OOqwDc",
+          "ytTitle": "Raabta (Kehte Hain Khuda) Full Song With Lyrics | Agent Vinod | Saif Ali Khan, Kareena Kapoor,Pritam",
+          "channel": "T-Series",
+          "dur": 233
+        },
+        {
+          "t": "Hasi",
+          "f": "Hamari Adhuri Kahani",
+          "y": 2015,
+          "yt": "d0x2UbhbdmY",
+          "ytTitle": "Hasi | Hamari Adhuri Kahani | Emraan Hashmi, Vidya Balan | Ami Mishra | Mohit Suri | 4K",
+          "channel": "Sony Music India",
+          "dur": 159
+        },
+        {
+          "t": "Jag Ghoomeya",
+          "f": "Sultan",
+          "y": 2016,
+          "q": "Jag Ghoomeya Sultan Rahat Fateh Ali Khan full song Salman Anushka",
+          "yt": "t10sQb0Zmjs",
+          "ytTitle": "Jag Ghoomeya Full Song | SULTAN | Salman Khan, Anushka Sharma | Rahat Fateh Ali Khan, Vishal-Shekhar",
+          "channel": "YRF",
+          "dur": 277
+        },
+        {
+          "t": "Manja",
+          "f": "Kai Po Che!",
+          "y": 2013,
+          "yt": "dTNnrfymKuw",
+          "ytTitle": "Manja - Lyrical Video | Kai Po Che | Sushant Singh Rajput, Rajkummar Rao, Amit Sadh | Amit Trivedi",
+          "channel": "Sony Music India",
+          "dur": 219
+        },
+        {
+          "t": "Kho Gaye Hum Kahan",
+          "f": "Baar Baar Dekho",
+          "y": 2016,
+          "yt": "vt4jX0iRgCg",
+          "ytTitle": "Kho Gaye Hum Kahan -Full Video |Baar Baar Dekho | Sidharth Malhotra, Katrina K| Jasleen R, Prateek K",
+          "channel": "Zee Music Company",
+          "dur": 255
+        }
+      ]
+    }
+  ]
+}

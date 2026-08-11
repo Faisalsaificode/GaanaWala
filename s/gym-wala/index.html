@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gym Wala — Last set, no spotter · Gaana Wala</title>
+<meta name="description" content="Basement gym, one mirror wall, rusted plates and a trainer named Pehelwan ji. The playlist has exactly one job and it does it without subtlety.">
+<meta property="og:title" content="Gym Wala — Last set, no spotter · Gaana Wala">
+<meta property="og:description" content="Basement gym, one mirror wall, rusted plates and a trainer named Pehelwan ji. The playlist has exactly one job and it does it without subtlety.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#d63b2f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%23d63b2f%22%2F%3E%3Cpath%20d%3D%22M21%207v13.2a4%204%200%201%201-2.4-3.66V10.6l-6.6%201.5v10.1a4%204%200%201%201-2.4-3.66V9.2z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<style>:root{--accent:#d63b2f;--accent-2:#222831;--on-accent:#ffffff}</style>
+<script>(function(){try{var t=localStorage.getItem('gw-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">
+      <span class="dot" aria-hidden="true"></span>
+      <span>GAANA WALA</span>
+      <small class="hi">गाना वाला</small>
+    </a>
+    <span class="spacer"></span>
+    <span class="clock" id="clock" aria-live="off"></span>
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle theme">☾</button>
+  </div>
+</header>
+<main>
+  <section class="station-hero">
+    <div class="inner wrap">
+      <div class="copy">
+        <nav class="crumbs"><a href="../../index.html">All stations</a> <span aria-hidden="true">/</span> Gym Wala</nav>
+        <div class="station-title">
+          <h1>Gym Wala</h1>
+          <span class="name-hi">जिम वाला</span>
+        </div>
+        <div class="station-sub">Last set, no spotter · 12 songs · 45 min</div>
+        <p class="station-blurb">Basement gym, one mirror wall, rusted plates and a trainer named Pehelwan ji. The playlist has exactly one job and it does it without subtlety.</p>
+      </div>
+      <figure class="art-panel"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <rect x="0" y="0" width="400" height="260" fill="#222831" opacity=".18"/>
+      <rect y="196" width="400" height="64" fill="var(--art-haze)"/>
+      <!-- barbell -->
+      <rect x="86" y="112" width="228" height="16" rx="8" fill="var(--art-ink)"/>
+      <g fill="#d63b2f" stroke="var(--art-ink)" stroke-width="6">
+        <rect x="62" y="70" width="30" height="100" rx="8"/>
+        <rect x="100" y="86" width="24" height="68" rx="7"/>
+        <rect x="276" y="86" width="24" height="68" rx="7"/>
+        <rect x="308" y="70" width="30" height="100" rx="8"/>
+      </g>
+      <!-- dumbbell -->
+      <rect x="140" y="196" width="120" height="10" rx="5" fill="var(--art-ink)"/>
+      <g fill="#222831" stroke="var(--art-ink)" stroke-width="5">
+        <rect x="124" y="180" width="20" height="42" rx="6"/>
+        <rect x="256" y="180" width="20" height="42" rx="6"/>
+      </g>
+      <path d="M40 40 l14 30 h-18 l14 30" fill="none" stroke="#d63b2f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M348 34 l14 30 h-18 l14 30" fill="none" stroke="#d63b2f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></figure>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="player" aria-label="Player">
+      <div class="player-top">
+        <button class="play-btn loading" id="play" type="button" aria-label="Play">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <div class="track-info">
+          <div class="label" id="tr-label">now playing · Gym Wala</div>
+          <div class="title" id="tr-title">—</div>
+          <div class="sub" id="tr-sub"></div>
+        </div>
+        <div class="transport">
+          <button class="icon-btn" id="prev" type="button" aria-label="Previous track"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+          <button class="icon-btn" id="next" type="button" aria-label="Next track"><svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z"/></svg></button>
+          <button class="icon-btn" id="shuffle" type="button" aria-label="Shuffle" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M17 3l4 4-4 4V8h-2.2l-2.3 3-1.3-1.7L13.6 6H17zM3 6h4.5l2.3 3-1.3 1.7L6.7 8H3zm14 8v-3l4 4-4 4v-3h-3.4l-2.3-3.1 1.3-1.7L14.8 14zM3 16h3.7l2.6-3.4 1.3 1.7L7.5 18H3z"/></svg></button>
+        </div>
+      </div>
+
+      <div class="scrub">
+        <span class="time" id="t-cur">0:00</span>
+        <div class="bar" id="bar" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="fill" id="fill"></span></div>
+        <span class="time right" id="t-dur">0:00</span>
+      </div>
+
+      <div class="player-foot">
+        <label class="vol"><span aria-hidden="true">🔊</span><span class="visually-hidden">Volume</span>
+          <input id="vol" type="range" min="0" max="100" value="80">
+        </label>
+        <div class="timer-group">
+          <span>Sleep</span>
+          <button class="chip" type="button" data-sleep="15" aria-pressed="false">15m</button>
+          <button class="chip" type="button" data-sleep="30" aria-pressed="false">30m</button>
+          <button class="chip" type="button" data-sleep="60" aria-pressed="false">60m</button>
+          <span id="timer-note"></span>
+        </div>
+        <a class="yt-link" id="yt-out" href="#" target="_blank" rel="noopener">Open on YouTube ↗</a>
+      </div>
+    </section>
+
+    <div class="section-head">
+      <h2>The rotation</h2>
+      <span class="count">12 songs · press a row to jump</span>
+    </div>
+    <ol class="tracks" id="tracks">
+<li>
+      <button type="button">
+        <span class="num">01</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Sultan Title Track</span><span class="f">Sultan · 2016</span></span>
+        <span class="dur">4:13</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">02</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Brothers Anthem</span><span class="f">Brothers · 2015</span></span>
+        <span class="dur">5:55</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">03</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Zinda</span><span class="f">Bhaag Milkha Bhaag · 2013</span></span>
+        <span class="dur">3:30</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">04</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Ziddi Dil</span><span class="f">Mary Kom · 2014</span></span>
+        <span class="dur">4:52</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">05</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Malang</span><span class="f">Dhoom 3 · 2013</span></span>
+        <span class="dur">5:41</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">06</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Khalibali</span><span class="f">Padmaavat · 2018</span></span>
+        <span class="dur">3:24</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">07</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Sher Aaya Sher</span><span class="f">Gully Boy · 2019</span></span>
+        <span class="dur">2:08</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">08</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Apna Time Aayega</span><span class="f">Gully Boy · 2019</span></span>
+        <span class="dur">2:11</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">09</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Dangal Title Track</span><span class="f">Dangal · 2016</span></span>
+        <span class="dur">2:46</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">10</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Get Ready To Fight</span><span class="f">Baaghi · 2016</span></span>
+        <span class="dur">2:18</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">11</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Bhaag DK Bose</span><span class="f">Delhi Belly · 2011</span></span>
+        <span class="dur">3:11</span>
+      </button>
+    </li>
+<li>
+      <button type="button">
+        <span class="num">12</span>
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="t"><span class="n">Chak Lein De</span><span class="f">Chandni Chowk To China · 2009</span></span>
+        <span class="dur">4:23</span>
+      </button>
+    </li>
+    </ol>
+
+    <div class="section-head"><h2>Somewhere else</h2></div>
+    <nav class="strip">
+      <a href="../saloon-wala/"><span class="swatch" style="background:#e0483a"></span>Saloon Wala</a>
+      <a href="../truck-wala/"><span class="swatch" style="background:#f2b134"></span>Truck Wala</a>
+      <a href="../bus-wala/"><span class="swatch" style="background:#2d7d8a"></span>Bus Wala</a>
+      <a href="../auto-wala/"><span class="swatch" style="background:#f0c419"></span>Auto Wala</a>
+      <a href="../chai-tapri/"><span class="swatch" style="background:#c96f2c"></span>Chai Tapri</a>
+      <a href="../shaadi-wala/"><span class="swatch" style="background:#e0206c"></span>Shaadi Wala</a>
+      <a href="../dhaba-wala/"><span class="swatch" style="background:#e07b39"></span>Dhaba Wala</a>
+      <a href="../paan-wala/"><span class="swatch" style="background:#1c8a4a"></span>Paan Wala</a>
+      <a href="../mandir-wala/"><span class="swatch" style="background:#e8931f"></span>Mandir Wala</a>
+      <a href="../qawwali-wala/"><span class="swatch" style="background:#2f6f6b"></span>Qawwali Wala</a>
+      <a href="../train-wala/"><span class="swatch" style="background:#3b5a7a"></span>Train Wala</a>
+      <a href="../barish-wala/"><span class="swatch" style="background:#4a7fa5"></span>Barish Wala</a>
+      <a href="../padhai-wala/"><span class="swatch" style="background:#6b5b95"></span>Padhai Wala</a>
+    </nav>
+  </div>
+</main>
+<footer class="footer">
+  <div class="wrap cols">
+    <div>
+      <p><strong>Gaana Wala</strong> — 14 places, 168 songs.</p>
+      <p>Everything plays through YouTube's own player, so the labels, composers and performers get exactly the view they would get anywhere else. All rights stay with them. Nothing is hosted here.</p>
+      <p>Rights holders: if a track should not be here, open an issue and it comes out.</p>
+    </div>
+    <div>
+      <p><a href="../../index.html">All stations</a></p>
+      <p style="opacity:.75">Times shown are Indian Standard Time.</p>
+    </div>
+  </div>
+</footer>
+<div id="yt-host"></div>
+<script>window.GW_STATION={"slug":"gym-wala","name":"Gym Wala","songs":[{"t":"Sultan Title Track","f":"Sultan","a":"","y":2016,"yt":"abiL84EAWSY"},{"t":"Brothers Anthem","f":"Brothers","a":"","y":2015,"yt":"lcs_GXu8IA0"},{"t":"Zinda","f":"Bhaag Milkha Bhaag","a":"","y":2013,"yt":"Ax0G_P2dSBw"},{"t":"Ziddi Dil","f":"Mary Kom","a":"","y":2014,"yt":"J6qhLhByWzQ"},{"t":"Malang","f":"Dhoom 3","a":"","y":2013,"yt":"SxoTAvwCr4A"},{"t":"Khalibali","f":"Padmaavat","a":"","y":2018,"yt":"v7K4vGYL9zI"},{"t":"Sher Aaya Sher","f":"Gully Boy","a":"","y":2019,"yt":"M81wneSjQbA"},{"t":"Apna Time Aayega","f":"Gully Boy","a":"","y":2019,"yt":"jFGKJBPFdUA"},{"t":"Dangal Title Track","f":"Dangal","a":"","y":2016,"yt":"l99GHZJQldo"},{"t":"Get Ready To Fight","f":"Baaghi","a":"","y":2016,"yt":"h6aGikIL-I4"},{"t":"Bhaag DK Bose","f":"Delhi Belly","a":"","y":2011,"yt":"IQEDu8SPHao"},{"t":"Chak Lein De","f":"Chandni Chowk To China","a":"","y":2009,"yt":"kd-6aw99DpA"}]};</script>
+<script src="../../assets/js/common.js"></script>
+<script src="../../assets/js/player.js"></script>
+</body>
+</html>

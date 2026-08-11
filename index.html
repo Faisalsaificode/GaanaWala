@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Your Next Gaana Wala — Gaana Wala</title>
+<meta name="description" content="14 Indian places, each with its own radio station. Saloon wala, truck wala, bus wala, chai tapri, auto wala and more — pick a place, press play.">
+<meta property="og:title" content="Find Your Next Gaana Wala — Gaana Wala">
+<meta property="og:description" content="14 Indian places, each with its own radio station. Saloon wala, truck wala, bus wala, chai tapri, auto wala and more — pick a place, press play.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#e0483a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%23e0483a%22%2F%3E%3Cpath%20d%3D%22M21%207v13.2a4%204%200%201%201-2.4-3.66V10.6l-6.6%201.5v10.1a4%204%200%201%201-2.4-3.66V9.2z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>:root{--accent:#e0483a;--accent-2:#f2b134;--on-accent:#ffffff}</style>
+<script>(function(){try{var t=localStorage.getItem('gw-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)}catch(e){}})();</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="dot" aria-hidden="true"></span>
+      <span>GAANA WALA</span>
+      <small class="hi">गाना वाला</small>
+    </a>
+    <span class="spacer"></span>
+    <span class="clock" id="clock" aria-live="off"></span>
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle theme">☾</button>
+  </div>
+</header>
+<main>
+  <section class="hero wrap">
+    <span class="kicker">14 places · 168 songs</span>
+    <h1>Find Your Next <span class="accent">Gaana Wala</span></h1>
+    <p class="lede">Every place in India has its own soundtrack, and everybody already knows it. The barber's. The truck cabin at 2am. The tapri at golden hour. Pick a place and press play.</p>
+    <div class="now-hint" id="now-hint"></div>
+  </section>
+
+  <div class="wrap">
+    <div class="filterbar">
+      <input id="filter" type="search" placeholder="Search a place, a film, a song…" aria-label="Search stations">
+      <button class="chip" type="button" data-bucket="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-bucket="now" aria-pressed="false">Right now</button>
+      <button class="chip" type="button" data-bucket="morning" aria-pressed="false">Morning</button>
+      <button class="chip" type="button" data-bucket="afternoon" aria-pressed="false">Afternoon</button>
+      <button class="chip" type="button" data-bucket="evening" aria-pressed="false">Evening</button>
+      <button class="chip" type="button" data-bucket="night" aria-pressed="false">Late night</button>
+    </div>
+
+    <div class="grid" id="grid">
+<a class="card" href="s/saloon-wala/" data-slug="saloon-wala" style="--accent:#e0483a;--accent-2:#f2b134;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <rect x="0" y="0" width="400" height="150" fill="#f2b134" opacity=".22"/>
+      <rect y="196" width="400" height="64" fill="var(--art-haze)"/>
+      <!-- mirror -->
+      <rect x="46" y="34" width="128" height="128" rx="6" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M56 150 L120 56 L150 150 Z" fill="#f2b134" opacity=".35"/>
+      <!-- barber pole -->
+      <rect x="318" y="40" width="26" height="120" rx="13" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <path d="M320 60 h22 M320 84 h22 M320 108 h22 M320 132 h22" stroke="#e0483a" stroke-width="9" stroke-linecap="round"/>
+      <!-- chair -->
+      <rect x="196" y="92" width="86" height="72" rx="10" fill="#e0483a" stroke="var(--art-ink)" stroke-width="6"/>
+      <rect x="186" y="120" width="18" height="40" rx="8" fill="var(--art-ink)"/>
+      <rect x="230" y="164" width="18" height="34" fill="var(--art-ink)"/>
+      <rect x="196" y="196" width="86" height="14" rx="7" fill="var(--art-ink)"/>
+      <!-- scissors -->
+      <g stroke="var(--art-ink)" stroke-width="5" fill="none" stroke-linecap="round">
+        <path d="M74 208 L118 178 M74 178 L118 208"/>
+        <circle cx="68" cy="212" r="7"/><circle cx="68" cy="174" r="7"/>
+      </g>
+      <!-- fan -->
+      <g stroke="var(--art-ink)" stroke-width="5" fill="var(--art-ink)">
+        <path d="M200 0 v18" stroke-linecap="round"/>
+        <circle cx="200" cy="24" r="8"/>
+        <path d="M192 24 L136 14 L136 34 Z" opacity=".85"/>
+        <path d="M208 24 L264 14 L264 34 Z" opacity=".85"/>
+      </g></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Saloon Wala</div>
+    <div class="name-hi">सैलून वाला</div>
+    <div class="tag">The ₹30 haircut canon</div>
+    <div class="meta">
+      <span>59 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/truck-wala/" data-slug="truck-wala" style="--accent:#f2b134;--accent-2:#2d7d8a;--on-accent:#191310">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <circle cx="330" cy="62" r="40" fill="#2d7d8a" opacity=".9"/>
+      <rect y="190" width="400" height="70" fill="var(--art-haze)"/>
+      <path d="M0 190 h400" stroke="var(--art-ink)" stroke-width="4"/>
+      <path d="M20 214 h60 M120 214 h60 M220 214 h60 M320 214 h60" stroke="var(--art-ink)" stroke-width="6" opacity=".5" stroke-linecap="round"/>
+      <!-- cab -->
+      <rect x="58" y="60" width="180" height="96" rx="8" fill="#f2b134" stroke="var(--art-ink)" stroke-width="6"/>
+      <rect x="78" y="78" width="64" height="46" rx="4" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <rect x="156" y="78" width="64" height="46" rx="4" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <rect x="58" y="34" width="180" height="28" rx="8" fill="#2d7d8a" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M70 48 h20 M104 48 h20 M138 48 h20 M172 48 h20 M206 48 h20" stroke="var(--art-ink)" stroke-width="5" stroke-linecap="round"/>
+      <!-- bed -->
+      <rect x="238" y="86" width="112" height="70" rx="6" fill="#2d7d8a" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M252 100 v42 M276 100 v42 M300 100 v42 M324 100 v42" stroke="var(--art-ink)" stroke-width="4" opacity=".55"/>
+      <!-- lights + wheels -->
+      <circle cx="70" cy="140" r="9" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="4"/>
+      <circle cx="104" cy="182" r="24" fill="var(--art-ink)"/><circle cx="104" cy="182" r="9" fill="var(--art-haze)"/>
+      <circle cx="292" cy="182" r="24" fill="var(--art-ink)"/><circle cx="292" cy="182" r="9" fill="var(--art-haze)"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Truck Wala</div>
+    <div class="name-hi">ट्रक वाला</div>
+    <div class="tag">Horn OK Please, 2am</div>
+    <div class="meta">
+      <span>68 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/bus-wala/" data-slug="bus-wala" style="--accent:#2d7d8a;--accent-2:#f2b134;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <path d="M0 130 L70 78 L130 122 L200 62 L280 126 L340 92 L400 130 V190 H0 Z" fill="#f2b134" opacity=".3"/>
+      <rect y="188" width="400" height="72" fill="var(--art-haze)"/>
+      <path d="M0 188 h400" stroke="var(--art-ink)" stroke-width="4"/>
+      <rect x="34" y="72" width="316" height="104" rx="14" fill="#2d7d8a" stroke="var(--art-ink)" stroke-width="6"/>
+      <rect x="34" y="72" width="316" height="22" rx="11" fill="#f2b134"/>
+      <g fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5">
+        <rect x="54" y="104" width="52" height="40" rx="4"/>
+        <rect x="118" y="104" width="52" height="40" rx="4"/>
+        <rect x="182" y="104" width="52" height="40" rx="4"/>
+        <rect x="246" y="104" width="52" height="40" rx="4"/>
+      </g>
+      <rect x="308" y="104" width="30" height="60" rx="4" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <circle cx="96" cy="180" r="22" fill="var(--art-ink)"/><circle cx="96" cy="180" r="8" fill="var(--art-haze)"/>
+      <circle cx="286" cy="180" r="22" fill="var(--art-ink)"/><circle cx="286" cy="180" r="8" fill="var(--art-haze)"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Bus Wala</div>
+    <div class="name-hi">बस वाला</div>
+    <div class="tag">Window seat, morning ghat</div>
+    <div class="meta">
+      <span>60 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/auto-wala/" data-slug="auto-wala" style="--accent:#f0c419;--accent-2:#1c8a4a;--on-accent:#191310">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <rect y="192" width="400" height="68" fill="var(--art-haze)"/>
+      <path d="M0 192 h400" stroke="var(--art-ink)" stroke-width="4"/>
+      <path d="M96 152 V88 q0-34 40-34 h84 q40 0 40 40 v58 Z" fill="#1c8a4a" stroke="var(--art-ink)" stroke-width="6"/>
+      <rect x="88" y="146" width="188" height="42" rx="10" fill="#f0c419" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M140 66 h72" stroke="var(--art-ink)" stroke-width="6" stroke-linecap="round"/>
+      <rect x="116" y="96" width="60" height="46" rx="6" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <path d="M276 150 l38 -22 v34 Z" fill="var(--art-ink)"/>
+      <circle cx="304" cy="112" r="10" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <circle cx="132" cy="192" r="22" fill="var(--art-ink)"/><circle cx="132" cy="192" r="8" fill="var(--art-haze)"/>
+      <circle cx="252" cy="192" r="22" fill="var(--art-ink)"/><circle cx="252" cy="192" r="8" fill="var(--art-haze)"/>
+      <!-- speaker -->
+      <rect x="196" y="100" width="52" height="42" rx="5" fill="var(--art-ink)"/>
+      <circle cx="222" cy="121" r="13" fill="#f0c419"/><circle cx="222" cy="121" r="5" fill="var(--art-ink)"/>
+      <g stroke="#f0c419" stroke-width="5" fill="none" stroke-linecap="round" opacity=".9">
+        <path d="M330 92 q14 26 0 52"/><path d="M352 78 q22 40 0 80"/>
+      </g></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Auto Wala</div>
+    <div class="name-hi">ऑटो वाला</div>
+    <div class="tag">Speaker bigger than the meter</div>
+    <div class="meta">
+      <span>57 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/chai-tapri/" data-slug="chai-tapri" style="--accent:#c96f2c;--accent-2:#e8a33d;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <circle cx="316" cy="74" r="46" fill="#e8a33d" opacity=".9"/>
+      <rect y="186" width="400" height="74" fill="var(--art-haze)"/>
+      <path d="M0 186 h400" stroke="var(--art-ink)" stroke-width="4"/>
+      <!-- kettle -->
+      <path d="M96 186 V126 q0-20 22-20 h56 q22 0 22 20 v60 Z" fill="#c96f2c" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M196 132 q34 4 30 32 t-30 22" fill="none" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M96 140 q-30 -6 -30 -26" fill="none" stroke="var(--art-ink)" stroke-width="6"/>
+      <rect x="118" y="90" width="56" height="16" rx="8" fill="var(--art-ink)"/>
+      <!-- glass -->
+      <path d="M244 186 L236 122 h56 l-8 64 Z" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M240 148 h48 l-4 34 h-40 Z" fill="#c96f2c" opacity=".75"/>
+      <!-- steam -->
+      <g stroke="var(--art-ink)" stroke-width="5" fill="none" stroke-linecap="round" opacity=".55">
+        <path d="M136 78 q-12 -18 0 -34 t0 -28"/>
+        <path d="M264 100 q-12 -16 0 -30 t0 -22"/>
+      </g>
+      <!-- stool -->
+      <rect x="308" y="150" width="60" height="12" rx="6" fill="var(--art-ink)"/>
+      <path d="M316 162 l-6 24 M360 162 l6 24" stroke="var(--art-ink)" stroke-width="6" stroke-linecap="round"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Chai Tapri</div>
+    <div class="name-hi">चाय टपरी</div>
+    <div class="tag">Golden hour, cutting chai</div>
+    <div class="meta">
+      <span>58 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/gym-wala/" data-slug="gym-wala" style="--accent:#d63b2f;--accent-2:#222831;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <rect x="0" y="0" width="400" height="260" fill="#222831" opacity=".18"/>
+      <rect y="196" width="400" height="64" fill="var(--art-haze)"/>
+      <!-- barbell -->
+      <rect x="86" y="112" width="228" height="16" rx="8" fill="var(--art-ink)"/>
+      <g fill="#d63b2f" stroke="var(--art-ink)" stroke-width="6">
+        <rect x="62" y="70" width="30" height="100" rx="8"/>
+        <rect x="100" y="86" width="24" height="68" rx="7"/>
+        <rect x="276" y="86" width="24" height="68" rx="7"/>
+        <rect x="308" y="70" width="30" height="100" rx="8"/>
+      </g>
+      <!-- dumbbell -->
+      <rect x="140" y="196" width="120" height="10" rx="5" fill="var(--art-ink)"/>
+      <g fill="#222831" stroke="var(--art-ink)" stroke-width="5">
+        <rect x="124" y="180" width="20" height="42" rx="6"/>
+        <rect x="256" y="180" width="20" height="42" rx="6"/>
+      </g>
+      <path d="M40 40 l14 30 h-18 l14 30" fill="none" stroke="#d63b2f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M348 34 l14 30 h-18 l14 30" fill="none" stroke="#d63b2f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Gym Wala</div>
+    <div class="name-hi">जिम वाला</div>
+    <div class="tag">Last set, no spotter</div>
+    <div class="meta">
+      <span>45 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/shaadi-wala/" data-slug="shaadi-wala" style="--accent:#e0206c;--accent-2:#f2b134;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <path d="M40 172 V96 q60 -58 160 -58 t160 58 v76" fill="none" stroke="var(--art-ink)" stroke-width="7"/>
+      <g fill="#f2b134">
+        <circle cx="72" cy="74" r="7"/><circle cx="118" cy="52" r="7"/><circle cx="168" cy="40" r="7"/>
+        <circle cx="232" cy="40" r="7"/><circle cx="282" cy="52" r="7"/><circle cx="328" cy="74" r="7"/>
+      </g>
+      <rect y="196" width="400" height="64" fill="var(--art-haze)"/>
+      <!-- dhol -->
+      <rect x="128" y="120" width="144" height="76" rx="14" fill="#e0206c" stroke="var(--art-ink)" stroke-width="6"/>
+      <ellipse cx="128" cy="158" rx="18" ry="40" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="6"/>
+      <ellipse cx="272" cy="158" rx="18" ry="40" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M146 130 l108 56 M146 186 l108 -56" stroke="var(--art-ink)" stroke-width="4" opacity=".5"/>
+      <path d="M92 106 l24 34 M308 106 l-24 34" stroke="var(--art-ink)" stroke-width="7" stroke-linecap="round"/>
+      <g fill="#f2b134"><circle cx="88" cy="100" r="9"/><circle cx="312" cy="100" r="9"/></g></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Shaadi Wala</div>
+    <div class="name-hi">शादी वाला</div>
+    <div class="tag">Baraat is not moving</div>
+    <div class="meta">
+      <span>69 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/dhaba-wala/" data-slug="dhaba-wala" style="--accent:#e07b39;--accent-2:#1c8a4a;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <path d="M0 60 q40 -22 80 0 t80 0 t80 0 t80 0 t80 0" fill="none" stroke="var(--art-ink)" stroke-width="4" opacity=".6"/>
+      <g fill="#1c8a4a">
+        <circle cx="40" cy="66" r="7"/><circle cx="120" cy="66" r="7"/><circle cx="200" cy="66" r="7"/>
+        <circle cx="280" cy="66" r="7"/><circle cx="360" cy="66" r="7"/>
+      </g>
+      <rect y="198" width="400" height="62" fill="var(--art-haze)"/>
+      <!-- charpai -->
+      <rect x="44" y="132" width="196" height="34" rx="6" fill="#e07b39" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M60 132 v34 M92 132 v34 M124 132 v34 M156 132 v34 M188 132 v34 M220 132 v34" stroke="var(--art-ink)" stroke-width="3" opacity=".55"/>
+      <path d="M56 166 v34 M228 166 v34" stroke="var(--art-ink)" stroke-width="8" stroke-linecap="round"/>
+      <!-- tandoor -->
+      <path d="M280 198 V140 q0-26 30-26 t30 26 v58 Z" fill="var(--art-ink)"/>
+      <ellipse cx="310" cy="140" rx="30" ry="12" fill="#e07b39"/>
+      <g stroke="#e07b39" stroke-width="5" fill="none" stroke-linecap="round">
+        <path d="M300 122 q-8 -18 4 -30"/><path d="M320 120 q-8 -16 2 -26"/>
+      </g></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Dhaba Wala</div>
+    <div class="name-hi">ढाबा वाला</div>
+    <div class="tag">Charpai, dal makhani, 1am</div>
+    <div class="meta">
+      <span>49 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/paan-wala/" data-slug="paan-wala" style="--accent:#1c8a4a;--accent-2:#e0483a;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <rect y="190" width="400" height="70" fill="var(--art-haze)"/>
+      <!-- leaf -->
+      <path d="M200 42 q78 46 62 108 q-14 54 -62 62 q-48 -8 -62 -62 q-16 -62 62 -108 Z" fill="#1c8a4a" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M200 60 V208" stroke="var(--art-ink)" stroke-width="5"/>
+      <path d="M200 96 l-34 -14 M200 96 l34 -14 M200 134 l-40 -16 M200 134 l40 -16 M200 170 l-34 -14 M200 170 l34 -14" stroke="var(--art-ink)" stroke-width="4" opacity=".6"/>
+      <!-- jars -->
+      <g fill="#e0483a" stroke="var(--art-ink)" stroke-width="5">
+        <rect x="34" y="126" width="52" height="64" rx="8"/>
+        <rect x="314" y="126" width="52" height="64" rx="8"/>
+      </g>
+      <rect x="28" y="112" width="64" height="16" rx="8" fill="var(--art-ink)"/>
+      <rect x="308" y="112" width="64" height="16" rx="8" fill="var(--art-ink)"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Paan Wala</div>
+    <div class="name-hi">पान वाला</div>
+    <div class="tag">Meetha, extra gulkand</div>
+    <div class="meta">
+      <span>73 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/mandir-wala/" data-slug="mandir-wala" style="--accent:#e8931f;--accent-2:#c0392b;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <circle cx="200" cy="96" r="62" fill="#c0392b" opacity=".9"/>
+      <rect y="196" width="400" height="64" fill="var(--art-haze)"/>
+      <path d="M112 196 V128 h176 v68 Z" fill="#e8931f" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M200 26 L296 128 H104 Z" fill="#e8931f" stroke="var(--art-ink)" stroke-width="6"/>
+      <path d="M200 56 L252 112 H148 Z" fill="var(--art-sky)" opacity=".45"/>
+      <path d="M176 196 v-42 q24 -26 48 0 v42 Z" fill="var(--art-ink)"/>
+      <path d="M200 26 v-16" stroke="var(--art-ink)" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="200" cy="6" r="7" fill="#c0392b"/>
+      <!-- bell -->
+      <path d="M56 92 v14 q-18 8 -18 30 h36 q0 -22 -18 -30 Z" fill="#c0392b" stroke="var(--art-ink)" stroke-width="5"/>
+      <path d="M56 92 v-24" stroke="var(--art-ink)" stroke-width="5"/>
+      <!-- diya -->
+      <path d="M318 176 q26 0 26 12 h-52 q0 -12 26 -12 Z" fill="var(--art-ink)"/>
+      <path d="M318 176 q-8 -14 0 -24 q8 10 0 24 Z" fill="#c0392b"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Mandir Wala</div>
+    <div class="name-hi">मंदिर वाला</div>
+    <div class="tag">5am, bell and loudspeaker</div>
+    <div class="meta">
+      <span>68 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/qawwali-wala/" data-slug="qawwali-wala" style="--accent:#2f6f6b;--accent-2:#d9a441;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <path d="M200 22 q52 34 52 84 h-104 q0 -50 52 -84 Z" fill="#d9a441" opacity=".28"/>
+      <rect y="196" width="400" height="64" fill="var(--art-haze)"/>
+      <!-- harmonium -->
+      <rect x="52" y="124" width="164" height="60" rx="8" fill="#2f6f6b" stroke="var(--art-ink)" stroke-width="6"/>
+      <rect x="66" y="112" width="136" height="14" rx="5" fill="var(--art-ink)"/>
+      <g fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="3">
+        <rect x="70" y="140" width="14" height="34"/><rect x="90" y="140" width="14" height="34"/>
+        <rect x="110" y="140" width="14" height="34"/><rect x="130" y="140" width="14" height="34"/>
+        <rect x="150" y="140" width="14" height="34"/><rect x="170" y="140" width="14" height="34"/>
+      </g>
+      <!-- tabla -->
+      <path d="M248 196 V152 q0-20 24-20 t24 20 v44 Z" fill="#d9a441" stroke="var(--art-ink)" stroke-width="6"/>
+      <ellipse cx="272" cy="150" rx="24" ry="10" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <path d="M312 196 V160 q0-18 20-18 t20 18 v36 Z" fill="#2f6f6b" stroke="var(--art-ink)" stroke-width="6"/>
+      <ellipse cx="332" cy="158" rx="20" ry="9" fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5"/>
+      <circle cx="272" cy="150" r="8" fill="var(--art-ink)"/><circle cx="332" cy="158" r="7" fill="var(--art-ink)"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Qawwali Wala</div>
+    <div class="name-hi">कव्वाली वाला</div>
+    <div class="tag">Dargah courtyard, after Isha</div>
+    <div class="meta">
+      <span>89 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/train-wala/" data-slug="train-wala" style="--accent:#3b5a7a;--accent-2:#e8a33d;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <g fill="#e8a33d" opacity=".8">
+        <circle cx="52" cy="46" r="3"/><circle cx="118" cy="30" r="2.5"/><circle cx="186" cy="52" r="3"/>
+        <circle cx="268" cy="34" r="2.5"/><circle cx="344" cy="56" r="3"/>
+      </g>
+      <rect y="196" width="400" height="64" fill="var(--art-haze)"/>
+      <rect x="24" y="82" width="352" height="90" rx="12" fill="#3b5a7a" stroke="var(--art-ink)" stroke-width="6"/>
+      <rect x="24" y="82" width="352" height="20" rx="10" fill="var(--art-ink)" opacity=".35"/>
+      <g fill="var(--art-sky)" stroke="var(--art-ink)" stroke-width="5">
+        <rect x="48" y="112" width="54" height="38" rx="4"/>
+        <rect x="118" y="112" width="54" height="38" rx="4"/>
+        <rect x="188" y="112" width="54" height="38" rx="4"/>
+        <rect x="258" y="112" width="54" height="38" rx="4"/>
+      </g>
+      <path d="M48 131 h54 M118 131 h54 M188 131 h54 M258 131 h54" stroke="var(--art-ink)" stroke-width="4" opacity=".45"/>
+      <rect x="326" y="112" width="30" height="38" rx="4" fill="#e8a33d" stroke="var(--art-ink)" stroke-width="5"/>
+      <g fill="var(--art-ink)"><circle cx="86" cy="178" r="13"/><circle cx="140" cy="178" r="13"/><circle cx="262" cy="178" r="13"/><circle cx="316" cy="178" r="13"/></g>
+      <path d="M0 200 h400 M0 214 h400" stroke="var(--art-ink)" stroke-width="5"/>
+      <path d="M30 196 v22 M110 196 v22 M190 196 v22 M270 196 v22 M350 196 v22" stroke="var(--art-ink)" stroke-width="5" opacity=".5"/></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Train Wala</div>
+    <div class="name-hi">ट्रेन वाला</div>
+    <div class="tag">Side upper, 3am, chai</div>
+    <div class="meta">
+      <span>60 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/barish-wala/" data-slug="barish-wala" style="--accent:#4a7fa5;--accent-2:#7fb069;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <path d="M40 44 q22 -26 52 -12 q26 -28 60 -6 q34 -12 44 14 q26 4 20 26 H36 q-8 -18 4 -22 Z" fill="#7fb069" opacity=".55"/>
+      <path d="M232 78 q18 -22 44 -10 q22 -22 50 -4 q28 -8 34 14 q20 6 12 22 H228 q-8 -16 4 -22 Z" fill="#7fb069" opacity=".4"/>
+      <rect y="212" width="400" height="48" fill="var(--art-haze)"/>
+      <g stroke="#4a7fa5" stroke-width="5" stroke-linecap="round" opacity=".85">
+        <path d="M44 116 l-12 34"/><path d="M92 128 l-12 34"/><path d="M140 112 l-12 34"/>
+        <path d="M188 132 l-12 34"/><path d="M236 118 l-12 34"/><path d="M284 134 l-12 34"/>
+        <path d="M332 116 l-12 34"/><path d="M372 136 l-12 34"/>
+        <path d="M68 168 l-10 28"/><path d="M164 172 l-10 28"/><path d="M260 166 l-10 28"/><path d="M356 174 l-10 28"/>
+      </g>
+      <!-- umbrella -->
+      <path d="M120 156 q40 -58 80 0 Z" fill="#4a7fa5" stroke="var(--art-ink)" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M160 156 v46 q0 14 16 14 t16 -16" fill="none" stroke="var(--art-ink)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M160 112 v-12" stroke="var(--art-ink)" stroke-width="5" stroke-linecap="round"/>
+      <g stroke="var(--art-ink)" stroke-width="4" opacity=".45" fill="none"><path d="M133 152 q13 -30 27 -30 q14 0 27 30"/></g></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Barish Wala</div>
+    <div class="name-hi">बारिश वाला</div>
+    <div class="tag">First rain, grille open</div>
+    <div class="meta">
+      <span>62 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+<a class="card" href="s/padhai-wala/" data-slug="padhai-wala" style="--accent:#6b5b95;--accent-2:#e8a33d;--on-accent:#ffffff">
+  <div class="art"><svg class="scene" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><rect width="400" height="260" fill="var(--art-sky)"/>
+      <rect x="0" y="0" width="400" height="260" fill="var(--art-ink)" opacity=".08"/>
+      <path d="M118 44 q46 -6 46 44 t-46 44" fill="none" stroke="var(--art-ink)" stroke-width="0"/>
+      <!-- lamp glow -->
+      <path d="M132 108 L52 214 h160 Z" fill="#e8a33d" opacity=".28"/>
+      <rect y="206" width="400" height="54" fill="var(--art-haze)"/>
+      <path d="M0 206 h400" stroke="var(--art-ink)" stroke-width="4"/>
+      <!-- lamp -->
+      <path d="M96 96 q36 -34 72 0 Z" fill="#6b5b95" stroke="var(--art-ink)" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M132 96 v-30 q0 -20 -34 -20" fill="none" stroke="var(--art-ink)" stroke-width="6" stroke-linecap="round"/>
+      <rect x="74" y="38" width="48" height="10" rx="5" fill="var(--art-ink)"/>
+      <!-- books -->
+      <g stroke="var(--art-ink)" stroke-width="5">
+        <rect x="228" y="176" width="128" height="16" rx="4" fill="#6b5b95"/>
+        <rect x="238" y="158" width="112" height="16" rx="4" fill="#e8a33d"/>
+        <rect x="248" y="140" width="96" height="16" rx="4" fill="#6b5b95"/>
+      </g>
+      <!-- cup -->
+      <path d="M152 206 V180 h44 v26 Z" fill="#e8a33d" stroke="var(--art-ink)" stroke-width="5"/>
+      <path d="M196 186 q16 0 16 10 t-16 10" fill="none" stroke="var(--art-ink)" stroke-width="5"/>
+      <g stroke="var(--art-ink)" stroke-width="4" fill="none" stroke-linecap="round" opacity=".5">
+        <path d="M168 172 q-8 -12 0 -22"/><path d="M184 172 q-8 -12 0 -22"/>
+      </g></svg><span class="badge">12 songs</span></div>
+  <div class="body">
+    <div class="name">Padhai Wala</div>
+    <div class="name-hi">पढ़ाई वाला</div>
+    <div class="tag">Table lamp, 2am, exam in six days</div>
+    <div class="meta">
+      <span>54 min rotation</span>
+      <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+    </div>
+  </div>
+</a>
+      <p class="empty" id="empty" style="display:none">Nothing matches that. Try a film name, or clear the search.</p>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="wrap cols">
+    <div>
+      <p><strong>Gaana Wala</strong> — 14 places, 168 songs.</p>
+      <p>Everything plays through YouTube's own player, so the labels, composers and performers get exactly the view they would get anywhere else. All rights stay with them. Nothing is hosted here.</p>
+      <p>Rights holders: if a track should not be here, open an issue and it comes out.</p>
+    </div>
+    <div>
+      <p><a href="index.html">All stations</a></p>
+      <p style="opacity:.75">Times shown are Indian Standard Time.</p>
+    </div>
+  </div>
+</footer>
+<script>window.GW_STATIONS=[{"slug":"saloon-wala","name":"Saloon Wala","hi":"सैलून वाला","tagline":"The ₹30 haircut canon","blurb":"A ceiling fan, a cracked mirror, a steel bowl of lather and one speaker turned up past what it can handle. These are the songs that played while the barber asked you, again, whether you wanted it short on the sides.","hours":[10,11,12,13,14,15,16,17],"songs":[{"t":"Tu Cheez Badi Hai Mast Mast","f":"Mohra"},{"t":"Ole Ole","f":"Yeh Dillagi"},{"t":"Yeh Kaali Kaali Aankhen","f":"Baazigar"},{"t":"Sona Kitna Sona Hai","f":"Hero No. 1"},{"t":"Churake Dil Mera","f":"Main Khiladi Tu Anari"},{"t":"Akhiyon Se Goli Maare","f":"Dulhe Raja"},{"t":"Ruk Ruk Ruk","f":"Vijaypath"},{"t":"Jhanjhariya","f":"Krishna"},{"t":"Dhak Dhak Karne Laga","f":"Beta"},{"t":"Pehla Nasha","f":"Jo Jeeta Wohi Sikandar"},{"t":"Kisi Disco Mein Jaaye","f":"Bade Miyan Chote Miyan"},{"t":"Tumse Milne Ki Tamanna Hai","f":"Saajan"}]},{"slug":"truck-wala","name":"Truck Wala","hi":"ट्रक वाला","tagline":"Horn OK Please, 2am","blurb":"The cabin canon. Sung at full volume on a dark stretch of national highway with nothing on either side, four hours still to go, and a photograph taped above the windscreen. Mostly about distance, letters, and people who did not wait.","hours":[22,23,0,1,2,3,4],"songs":[{"t":"Chitthi Aayi Hai","f":"Naam"},{"t":"Main Nikla Gaddi Leke","f":"Gadar: Ek Prem Katha"},{"t":"Pardesi Pardesi Jaana Nahin","f":"Raja Hindustani"},{"t":"Tujhe Dekha To Ye Jaana Sanam","f":"Dilwale Dulhania Le Jayenge"},{"t":"Chalte Chalte Mere Yeh Geet","f":"Chalte Chalte"},{"t":"Ae Kaash Ke Hum","f":"Kabhi Haan Kabhi Naa"},{"t":"Kya Hua Tera Wada","f":"Hum Kisise Kum Naheen"},{"t":"Sochenge Tumhe Pyar","f":"Deewana"},{"t":"Tadap Tadap Ke","f":"Hum Dil De Chuke Sanam"},{"t":"Meri Mehbooba","f":"Pardes"},{"t":"Dil Hoom Hoom Kare","f":"Rudaali"},{"t":"Lambi Judai","f":"Hero"}]},{"slug":"bus-wala","name":"Bus Wala","hi":"बस वाला","tagline":"Window seat, morning ghat","blurb":"State transport, 7am, the window jammed half open. Somebody up front has a phone speaker going and nobody minds. Songs for hills on one side, a valley on the other, and a conductor who knows every stop by heart.","hours":[6,7,8,9],"songs":[{"t":"Zindagi Ek Safar Hai Suhana","f":"Andaz"},{"t":"Musafir Hoon Yaaron","f":"Parichay"},{"t":"Suhana Safar Aur Yeh Mausam Haseen","f":"Madhumati"},{"t":"Yeh Dosti Hum Nahi Todenge","f":"Sholay"},{"t":"Panchhi Banoon Udti Phiroon","f":"Chori Chori"},{"t":"Safarnama","f":"Tamasha"},{"t":"Yun Hi Chala Chal","f":"Swades"},{"t":"Aane Wala Pal","f":"Golmaal"},{"t":"Ruk Jana Nahin","f":"Imtihan"},{"t":"Mera Joota Hai Japani","f":"Shree 420"},{"t":"Chala Jaata Hoon","f":"Mere Jeevan Saathi"},{"t":"Dil Chahta Hai","f":"Dil Chahta Hai"}]},{"slug":"auto-wala","name":"Auto Wala","hi":"ऑटो वाला","tagline":"Speaker bigger than the meter","blurb":"Three wheels, mirror-work upholstery, a subwoofer where the toolbox should be. He takes the corner at an angle the physics does not allow and the bass does not drop for the whole ride.","hours":[18,19,20,21],"songs":[{"t":"Dilbar Dilbar","f":"Sirf Tum"},{"t":"Kaanta Laga","f":"DJ Doll"},{"t":"Tunak Tunak Tun","f":"Daler Mehndi"},{"t":"Bolo Ta Ra Ra","f":"Daler Mehndi"},{"t":"Aankh Marey","f":"Simmba"},{"t":"Munni Badnaam Hui","f":"Dabangg"},{"t":"Sheila Ki Jawani","f":"Tees Maar Khan"},{"t":"Chikni Chameli","f":"Agneepath"},{"t":"Lungi Dance","f":"Chennai Express"},{"t":"Abhi Toh Party Shuru Hui Hai","f":"Khoobsurat"},{"t":"Tamma Tamma Loge","f":"Thanedaar"},{"t":"Saturday Saturday","f":"Humpty Sharma Ki Dulhania"}]},{"slug":"chai-tapri","name":"Chai Tapri","hi":"चाय टपरी","tagline":"Golden hour, cutting chai","blurb":"Steel glasses, plastic stools, one kettle that has never been washed and gossip that solves nothing and everything. The sun is going down behind the flyover and nobody has anywhere to be for twenty more minutes.","hours":[16,17,18],"songs":[{"t":"Kabira","f":"Yeh Jawaani Hai Deewani"},{"t":"Ilahi","f":"Yeh Jawaani Hai Deewani"},{"t":"Phir Le Aaya Dil","f":"Barfi!"},{"t":"Iktara","f":"Wake Up Sid"},{"t":"Behti Hawa Sa Tha Woh","f":"3 Idiots"},{"t":"Khoya Khoya Chand","f":"Kala Bazar"},{"t":"Tum Ho Toh","f":"Rock On!!"},{"t":"Masakali","f":"Delhi-6"},{"t":"Nadaan Parindey","f":"Rockstar"},{"t":"Bandeh","f":"Black Friday"},{"t":"Ma Rewa","f":"Indian Ocean"},{"t":"Ek Garam Chai Ki Pyali Ho","f":""}]},{"slug":"gym-wala","name":"Gym Wala","hi":"जिम वाला","tagline":"Last set, no spotter","blurb":"Basement gym, one mirror wall, rusted plates and a trainer named Pehelwan ji. The playlist has exactly one job and it does it without subtlety.","hours":[5,6,7,19,20],"songs":[{"t":"Sultan Title Track","f":"Sultan"},{"t":"Brothers Anthem","f":"Brothers"},{"t":"Zinda","f":"Bhaag Milkha Bhaag"},{"t":"Ziddi Dil","f":"Mary Kom"},{"t":"Malang","f":"Dhoom 3"},{"t":"Khalibali","f":"Padmaavat"},{"t":"Sher Aaya Sher","f":"Gully Boy"},{"t":"Apna Time Aayega","f":"Gully Boy"},{"t":"Dangal Title Track","f":"Dangal"},{"t":"Get Ready To Fight","f":"Baaghi"},{"t":"Bhaag DK Bose","f":"Delhi Belly"},{"t":"Chak Lein De","f":"Chandni Chowk To China"}]},{"slug":"shaadi-wala","name":"Shaadi Wala","hi":"शादी वाला","tagline":"Baraat is not moving","blurb":"Generator lights, a dhol that started at four in the afternoon, and every uncle convinced the floor is his. The baraat has covered forty metres in an hour and a half. Nobody is complaining.","hours":[19,20,21,22],"songs":[{"t":"Didi Tera Devar Deewana","f":"Hum Aapke Hain Koun..!"},{"t":"Mehndi Laga Ke Rakhna","f":"Dilwale Dulhania Le Jayenge"},{"t":"Bole Chudiyan","f":"Kabhi Khushi Kabhie Gham"},{"t":"Aaj Mere Yaar Ki Shaadi Hai","f":"Aadmi Sadak Ka"},{"t":"London Thumakda","f":"Queen"},{"t":"Nagada Sang Dhol","f":"Goliyon Ki Raasleela Ram-Leela"},{"t":"Gallan Goodiyaan","f":"Dil Dhadakne Do"},{"t":"Saajanji Ghar Aaye","f":"Kuch Kuch Hota Hai"},{"t":"Dulhe Ka Sehra","f":"Dhadkan"},{"t":"Chunari Chunari","f":"Biwi No.1"},{"t":"Kajra Re","f":"Bunty Aur Babli"},{"t":"Wah Wah Ramji","f":"Hum Aapke Hain Koun..!"}]},{"slug":"dhaba-wala","name":"Dhaba Wala","hi":"ढाबा वाला","tagline":"Charpai, dal makhani, 1am","blurb":"Somewhere on GT Road. String lights, a tandoor still going, charpais laid out in the gravel. Punjabi at a volume that carries to the next dhaba, which is playing the same song.","hours":[21,22,23,0,1],"songs":[{"t":"Mundian To Bach Ke","f":"Panjabi MC"},{"t":"Gur Naal Ishq Mitha","f":"Malkit Singh"},{"t":"Jugni","f":"Cocktail"},{"t":"Sadi Gali","f":"Tanu Weds Manu"},{"t":"Kala Chashma","f":"Baar Baar Dekho"},{"t":"Patiala Peg","f":"Diljit Dosanjh"},{"t":"Laembadgini","f":"Diljit Dosanjh"},{"t":"Do You Know","f":"Diljit Dosanjh"},{"t":"High Rated Gabru","f":"Guru Randhawa"},{"t":"Lamberghini","f":"The Doorbeen"},{"t":"Brown Munde","f":"AP Dhillon"},{"t":"Yaar Anmulle","f":"Sharry Mann"}]},{"slug":"paan-wala","name":"Paan Wala","hi":"पान वाला","tagline":"Meetha, extra gulkand","blurb":"A glass case of silver leaf and supari, a transistor on the shelf, and a queue of three men who came for cigarettes and stayed for the argument. Pure eighties masala, no apologies.","hours":[20,21,22],"songs":[{"t":"Khaike Paan Banaraswala","f":"Don"},{"t":"I Am A Disco Dancer","f":"Disco Dancer"},{"t":"Jimmy Jimmy Aaja","f":"Disco Dancer"},{"t":"Ui Amma Ui Amma","f":"Mawaali"},{"t":"Aap Jaisa Koi","f":"Qurbani"},{"t":"Jawani Janeman","f":"Namak Halaal"},{"t":"Pag Ghungroo Baandh","f":"Namak Halaal"},{"t":"Ek Do Teen","f":"Tezaab"},{"t":"Papa Kehte Hain","f":"Qayamat Se Qayamat Tak"},{"t":"Tirchi Topiwale","f":"Tridev"},{"t":"Oye Oye","f":"Tridev"},{"t":"Yaad Aa Raha Hai","f":"Disco Dancer"}]},{"slug":"mandir-wala","name":"Mandir Wala","hi":"मंदिर वाला","tagline":"5am, bell and loudspeaker","blurb":"Before the traffic starts. A bell, a conch, agarbatti smoke and a horn speaker on a pole that the whole colony can hear whether it wants to or not.","hours":[4,5,6,7],"songs":[{"t":"Om Jai Jagdish Hare","f":""},{"t":"Achyutam Keshavam","f":"Bhajan"},{"t":"Hanuman Chalisa","f":"Hariharan"},{"t":"Gayatri Mantra","f":"Anuradha Paudwal"},{"t":"Aisi Lagi Lagan","f":"Anup Jalota"},{"t":"Jai Ganesh Deva","f":""},{"t":"Sukhkarta Dukhharta","f":""},{"t":"Raghupati Raghav Raja Ram","f":""},{"t":"Vaishnav Jan To","f":""},{"t":"Man Tarpat Hari Darshan Ko Aaj","f":"Baiju Bawra"},{"t":"Allah Tero Naam","f":"Hum Dono"},{"t":"Tu Pyar Ka Sagar Hai","f":"Seema"}]},{"slug":"qawwali-wala","name":"Qawwali Wala","hi":"कव्वाली वाला","tagline":"Dargah courtyard, after Isha","blurb":"Harmonium, tabla, and eight men clapping on the off-beat until the courtyard gives in. It starts slow. It does not stay slow.","hours":[21,22,23,0],"songs":[{"t":"Dama Dam Mast Qalandar","f":"Nusrat Fateh Ali Khan"},{"t":"Tumhe Dillagi","f":"Nusrat Fateh Ali Khan"},{"t":"Afreen Afreen","f":"Nusrat Fateh Ali Khan"},{"t":"Sanson Ki Mala Pe","f":"Nusrat Fateh Ali Khan"},{"t":"Bhar Do Jholi Meri","f":"Bajrangi Bhaijaan"},{"t":"Kun Faya Kun","f":"Rockstar"},{"t":"Khwaja Mere Khwaja","f":"Jodhaa Akbar"},{"t":"Piya Haji Ali","f":"Fiza"},{"t":"Arziyan","f":"Delhi-6"},{"t":"Parda Hai Parda","f":"Amar Akbar Anthony"},{"t":"Hai Agar Dushman","f":"Hum Kisise Kum Naheen"},{"t":"Tajdar-e-Haram","f":"Atif Aslam"}]},{"slug":"train-wala","name":"Train Wala","hi":"ट्रेन वाला","tagline":"Side upper, 3am, chai","blurb":"Sleeper class with the window shutter up. Fields going past in the dark, somebody snoring two berths down, and a chaiwala who will come through at exactly the wrong hour. Kishore, mostly.","hours":[23,0,1,2,3,4,5],"songs":[{"t":"Chaiyya Chaiyya","f":"Dil Se.."},{"t":"Mere Sapno Ki Rani","f":"Aradhana"},{"t":"Gaadi Bula Rahi Hai","f":"Dost"},{"t":"Zindagi Ka Safar","f":"Safar"},{"t":"Kuch To Log Kahenge","f":"Amar Prem"},{"t":"Chingari Koi Bhadke","f":"Amar Prem"},{"t":"Yeh Shaam Mastani","f":"Kati Patang"},{"t":"Diye Jalte Hain","f":"Namak Haraam"},{"t":"Main Shayar Badnaam","f":"Namak Haraam"},{"t":"O Mere Dil Ke Chain","f":"Mere Jeevan Saathi"},{"t":"Raat Kali Ek Khwab Mein Aayi","f":"Buddha Mil Gaya"},{"t":"Rail Gaadi","f":"Ashok Kumar"}]},{"slug":"barish-wala","name":"Barish Wala","hi":"बारिश वाला","tagline":"First rain, grille open","blurb":"The smell before it lands, then the sound on the tin awning. Power will go in about four minutes. Somebody is already making pakodas.","hours":[15,16,17,18,19],"songs":[{"t":"Rimjhim Gire Sawan","f":"Manzil"},{"t":"Bheegi Bheegi Raaton Mein","f":"Ajnabee"},{"t":"Ab Ke Sawan","f":"Shubha Mudgal"},{"t":"Barso Re","f":"Guru"},{"t":"Tip Tip Barsa Paani","f":"Mohra"},{"t":"Kaate Nahi Kat Te","f":"Mr. India"},{"t":"Ghanan Ghanan","f":"Lagaan"},{"t":"Koi Ladki Hai","f":"Dil To Pagal Hai"},{"t":"Bheegi Bheegi","f":"Gangster"},{"t":"Zara Zara","f":"Rehnaa Hai Terre Dil Mein"},{"t":"Megha Re Megha","f":"Pyaasa Sawan"},{"t":"Lagi Aaj Sawan Ki","f":"Chandni"}]},{"slug":"padhai-wala","name":"Padhai Wala","hi":"पढ़ाई वाला","tagline":"Table lamp, 2am, exam in six days","blurb":"One lamp, one desk, a cold cup of Bournvita and a syllabus that is not going to finish itself. Soft enough to keep going, sad enough to feel like it matters.","hours":[22,23,0,1,2],"songs":[{"t":"Tum Ho","f":"Rockstar"},{"t":"Agar Tum Saath Ho","f":"Tamasha"},{"t":"Khamoshiyan","f":"Khamoshiyan"},{"t":"Tere Bina","f":"Guru"},{"t":"Luka Chuppi","f":"Rang De Basanti"},{"t":"Ae Ajnabi","f":"Dil Se.."},{"t":"Naina Da Kya Kasoor","f":"Andhadhun"},{"t":"Raabta","f":"Agent Vinod"},{"t":"Hasi","f":"Hamari Adhuri Kahani"},{"t":"Jag Ghoomeya","f":"Sultan"},{"t":"Manja","f":"Kai Po Che!"},{"t":"Kho Gaye Hum Kahan","f":"Baar Baar Dekho"}]}];</script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

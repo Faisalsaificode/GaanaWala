@@ -1,0 +1,16 @@
+{
+  "name": "gaana-wala",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Find Your Next Gaana Wala — a directory of Indian places, each with its own radio station.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "serve": "node tools/serve.mjs 8099",
+    "start": "node tools/build.mjs && node tools/serve.mjs 8099",
+    "resolve": "node tools/resolve-youtube.mjs",
+    "resolve:force": "node tools/resolve-youtube.mjs --force",
+    "check": "node tools/check-embeds.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

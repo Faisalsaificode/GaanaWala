@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>embed probe</title>
+<!-- Test rig, not part of the site. Cues each video id in a real YouTube
+     player and records the ones the API rejects. Driven by tools/check-embeds.mjs. -->
+<div id="p"></div>
+<script>
+  var player, ready = false, current = null, errors = {};
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('p', {
+      height: 180, width: 320,
+      playerVars: { origin: location.origin, controls: 0 },
+      events: {
+        onReady: function () { ready = true; },
+        onError: function (e) { if (current) errors[current] = e.data; },
+      },
+    });
+  }
+
+  window.gwReady = function () { return ready; };
+
+  window.gwProbe = async function (ids, waitMs) {
+    var bad = [];
+    for (var i = 0; i < ids.length; i++) {
+      current = ids[i];
+      delete errors[current];
+      player.cueVideoById(current);
+      await new Promise(function (r) { setTimeout(r, waitMs || 850); });
+      if (errors[current]) bad.push({ id: current, code: errors[current] });
+    }
+    current = null;
+    return bad;
+  };
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
