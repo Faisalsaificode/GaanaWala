@@ -126,6 +126,36 @@ h1, h2, h3, .display { font-family: var(--font-display); font-weight: 800; line-
 .now-hint .pulse { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); animation: pulse 1.8s ease-in-out infinite; }
 @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.8); } }
 
+/* ---------- visitor counters ---------- */
+
+.stats {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.4rem;
+  margin-top: 1.1rem; font-size: 0.9rem; color: var(--ink-soft);
+}
+.stats[hidden] { display: none; }
+.stats .stat { display: inline-flex; align-items: center; gap: 0.4rem; }
+.stats b { color: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.live-here {
+  display: inline-flex; align-items: center; gap: 0.3rem; margin-left: 0.6rem;
+  padding: 0.1rem 0.5rem; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  color: var(--ink); font-size: 0.68rem; letter-spacing: 0.06em;
+}
+.live-here[hidden] { display: none; }
+.live-here b { font-variant-numeric: tabular-nums; }
+
+.card .meta .live-for {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  color: var(--ink); font-weight: 700;
+}
+.card .meta .live-for[hidden] { display: none; }
+.card .meta .live-for::before {
+  content: ''; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); animation: pulse 1.8s ease-in-out infinite;
+}
+.card .meta .live-for + .dim { opacity: 0.65; }
+
 /* ---------- filter ---------- */
 
 .filterbar { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; justify-content: center; margin: 2.2rem 0 1.4rem; }

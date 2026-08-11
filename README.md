@@ -85,6 +85,50 @@ new `q` in `seed.mjs` followed by `resolve` + `build`.
 The player also handles this at runtime: if a video turns out to be unplayable it gets
 marked and skipped rather than stalling the station.
 
+## Visitor counters
+
+The homepage shows **how many people are on the site right now** and **how many visits
+there have been in total**; station cards show a live count each, and a station page
+shows how many people are listening to that station.
+
+"Right now" is real presence, not an estimate. Every open tab holds a node in a Firebase
+Realtime Database with an `onDisconnect` handler, so closing the tab — or losing the
+network — removes it within seconds. A total is counted once per browser session, not
+once per page view.
+
+GitHub Pages is static and cannot count anything on its own, so this needs one free
+service behind it. Setup is about three minutes:
+
+1. [console.firebase.google.com](https://console.firebase.google.com) → **Add project**.
+   Analytics is not needed.
+2. **Build → Realtime Database → Create Database**. Pick a region, start in **locked
+   mode**.
+3. Open the **Rules** tab, replace everything with the contents of
+   [`firebase-rules.json`](firebase-rules.json), and **Publish**. These rules allow
+   anonymous reads, let the visit counter only ever go up by one, and restrict presence
+   nodes to a fixed shape.
+4. **Project settings → General → Your apps → Web (`</>`)** → register the app → copy
+   `apiKey`, `projectId` and `databaseURL` from the config it shows you.
+5. Paste those three values into [`assets/js/config.js`](assets/js/config.js), commit,
+   push.
+
+That is all — no build change, and the counters appear on the next deploy.
+
+**On committing the keys:** Firebase web config is public by design. It ships in the
+JavaScript of every Firebase web app. What protects the database is the rules in step 3,
+not secrecy of the key.
+
+**If you skip this entirely**, the counters simply never appear and nothing else changes.
+Same if Firebase is down or blocked by an ad blocker: the numbers stay hidden rather than
+showing something wrong.
+
+**Free tier limits:** 100 simultaneous connections. That is 100 people on the site at the
+same moment, which is a lot — but if this takes off, that is the ceiling to watch.
+
+```bash
+npm run check:counters   # verifies the counter UI without needing a Firebase project
+```
+
 ## Deploying to GitHub Pages
 
 Live at **https://gaanawala.run.place**

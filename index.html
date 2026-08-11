@@ -38,6 +38,10 @@
     <h1>Find Your Next <span class="accent">Gaana Wala</span></h1>
     <p class="lede">Every place in India has its own soundtrack, and everybody already knows it. The barber's. The truck cabin at 2am. The tapri at golden hour. Pick a place and press play.</p>
     <div class="now-hint" id="now-hint"></div>
+    <div class="stats" id="stats" hidden>
+      <span class="stat"><span class="pulse" aria-hidden="true"></span><b id="live-now">–</b> listening right now</span>
+      <span class="stat"><b id="total-visits">–</b> visits all time</span>
+    </div>
   </section>
 
   <div class="wrap">
@@ -84,7 +88,8 @@
     <div class="name-hi">सैलून वाला</div>
     <div class="tag">The ₹30 haircut canon</div>
     <div class="meta">
-      <span>59 min rotation</span>
+      <span class="live-for" data-live-for="saloon-wala" hidden></span>
+      <span class="dim">59 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -113,7 +118,8 @@
     <div class="name-hi">ट्रक वाला</div>
     <div class="tag">Horn OK Please, 2am</div>
     <div class="meta">
-      <span>68 min rotation</span>
+      <span class="live-for" data-live-for="truck-wala" hidden></span>
+      <span class="dim">68 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -139,7 +145,8 @@
     <div class="name-hi">बस वाला</div>
     <div class="tag">Window seat, morning ghat</div>
     <div class="meta">
-      <span>60 min rotation</span>
+      <span class="live-for" data-live-for="bus-wala" hidden></span>
+      <span class="dim">60 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -167,7 +174,8 @@
     <div class="name-hi">ऑटो वाला</div>
     <div class="tag">Speaker bigger than the meter</div>
     <div class="meta">
-      <span>57 min rotation</span>
+      <span class="live-for" data-live-for="auto-wala" hidden></span>
+      <span class="dim">57 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -198,7 +206,8 @@
     <div class="name-hi">चाय टपरी</div>
     <div class="tag">Golden hour, cutting chai</div>
     <div class="meta">
-      <span>58 min rotation</span>
+      <span class="live-for" data-live-for="chai-tapri" hidden></span>
+      <span class="dim">58 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -228,7 +237,8 @@
     <div class="name-hi">जिम वाला</div>
     <div class="tag">Last set, no spotter</div>
     <div class="meta">
-      <span>45 min rotation</span>
+      <span class="live-for" data-live-for="gym-wala" hidden></span>
+      <span class="dim">45 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -253,7 +263,8 @@
     <div class="name-hi">शादी वाला</div>
     <div class="tag">Baraat is not moving</div>
     <div class="meta">
-      <span>69 min rotation</span>
+      <span class="live-for" data-live-for="shaadi-wala" hidden></span>
+      <span class="dim">69 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -281,7 +292,8 @@
     <div class="name-hi">ढाबा वाला</div>
     <div class="tag">Charpai, dal makhani, 1am</div>
     <div class="meta">
-      <span>49 min rotation</span>
+      <span class="live-for" data-live-for="dhaba-wala" hidden></span>
+      <span class="dim">49 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -305,7 +317,8 @@
     <div class="name-hi">पान वाला</div>
     <div class="tag">Meetha, extra gulkand</div>
     <div class="meta">
-      <span>73 min rotation</span>
+      <span class="live-for" data-live-for="paan-wala" hidden></span>
+      <span class="dim">73 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -331,7 +344,8 @@
     <div class="name-hi">मंदिर वाला</div>
     <div class="tag">5am, bell and loudspeaker</div>
     <div class="meta">
-      <span>68 min rotation</span>
+      <span class="live-for" data-live-for="mandir-wala" hidden></span>
+      <span class="dim">68 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -359,7 +373,8 @@
     <div class="name-hi">कव्वाली वाला</div>
     <div class="tag">Dargah courtyard, after Isha</div>
     <div class="meta">
-      <span>89 min rotation</span>
+      <span class="live-for" data-live-for="qawwali-wala" hidden></span>
+      <span class="dim">89 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -389,7 +404,8 @@
     <div class="name-hi">ट्रेन वाला</div>
     <div class="tag">Side upper, 3am, chai</div>
     <div class="meta">
-      <span>60 min rotation</span>
+      <span class="live-for" data-live-for="train-wala" hidden></span>
+      <span class="dim">60 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -415,7 +431,8 @@
     <div class="name-hi">बारिश वाला</div>
     <div class="tag">First rain, grille open</div>
     <div class="meta">
-      <span>62 min rotation</span>
+      <span class="live-for" data-live-for="barish-wala" hidden></span>
+      <span class="dim">62 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -449,7 +466,8 @@
     <div class="name-hi">पढ़ाई वाला</div>
     <div class="tag">Table lamp, 2am, exam in six days</div>
     <div class="meta">
-      <span>54 min rotation</span>
+      <span class="live-for" data-live-for="padhai-wala" hidden></span>
+      <span class="dim">54 min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -472,7 +490,9 @@
   </div>
 </footer>
 <script>window.GW_STATIONS=[{"slug":"saloon-wala","name":"Saloon Wala","hi":"सैलून वाला","tagline":"The ₹30 haircut canon","blurb":"A ceiling fan, a cracked mirror, a steel bowl of lather and one speaker turned up past what it can handle. These are the songs that played while the barber asked you, again, whether you wanted it short on the sides.","hours":[10,11,12,13,14,15,16,17],"songs":[{"t":"Tu Cheez Badi Hai Mast Mast","f":"Mohra"},{"t":"Ole Ole","f":"Yeh Dillagi"},{"t":"Yeh Kaali Kaali Aankhen","f":"Baazigar"},{"t":"Sona Kitna Sona Hai","f":"Hero No. 1"},{"t":"Churake Dil Mera","f":"Main Khiladi Tu Anari"},{"t":"Akhiyon Se Goli Maare","f":"Dulhe Raja"},{"t":"Ruk Ruk Ruk","f":"Vijaypath"},{"t":"Jhanjhariya","f":"Krishna"},{"t":"Dhak Dhak Karne Laga","f":"Beta"},{"t":"Pehla Nasha","f":"Jo Jeeta Wohi Sikandar"},{"t":"Kisi Disco Mein Jaaye","f":"Bade Miyan Chote Miyan"},{"t":"Tumse Milne Ki Tamanna Hai","f":"Saajan"}]},{"slug":"truck-wala","name":"Truck Wala","hi":"ट्रक वाला","tagline":"Horn OK Please, 2am","blurb":"The cabin canon. Sung at full volume on a dark stretch of national highway with nothing on either side, four hours still to go, and a photograph taped above the windscreen. Mostly about distance, letters, and people who did not wait.","hours":[22,23,0,1,2,3,4],"songs":[{"t":"Chitthi Aayi Hai","f":"Naam"},{"t":"Main Nikla Gaddi Leke","f":"Gadar: Ek Prem Katha"},{"t":"Pardesi Pardesi Jaana Nahin","f":"Raja Hindustani"},{"t":"Tujhe Dekha To Ye Jaana Sanam","f":"Dilwale Dulhania Le Jayenge"},{"t":"Chalte Chalte Mere Yeh Geet","f":"Chalte Chalte"},{"t":"Ae Kaash Ke Hum","f":"Kabhi Haan Kabhi Naa"},{"t":"Kya Hua Tera Wada","f":"Hum Kisise Kum Naheen"},{"t":"Sochenge Tumhe Pyar","f":"Deewana"},{"t":"Tadap Tadap Ke","f":"Hum Dil De Chuke Sanam"},{"t":"Meri Mehbooba","f":"Pardes"},{"t":"Dil Hoom Hoom Kare","f":"Rudaali"},{"t":"Lambi Judai","f":"Hero"}]},{"slug":"bus-wala","name":"Bus Wala","hi":"बस वाला","tagline":"Window seat, morning ghat","blurb":"State transport, 7am, the window jammed half open. Somebody up front has a phone speaker going and nobody minds. Songs for hills on one side, a valley on the other, and a conductor who knows every stop by heart.","hours":[6,7,8,9],"songs":[{"t":"Zindagi Ek Safar Hai Suhana","f":"Andaz"},{"t":"Musafir Hoon Yaaron","f":"Parichay"},{"t":"Suhana Safar Aur Yeh Mausam Haseen","f":"Madhumati"},{"t":"Yeh Dosti Hum Nahi Todenge","f":"Sholay"},{"t":"Panchhi Banoon Udti Phiroon","f":"Chori Chori"},{"t":"Safarnama","f":"Tamasha"},{"t":"Yun Hi Chala Chal","f":"Swades"},{"t":"Aane Wala Pal","f":"Golmaal"},{"t":"Ruk Jana Nahin","f":"Imtihan"},{"t":"Mera Joota Hai Japani","f":"Shree 420"},{"t":"Chala Jaata Hoon","f":"Mere Jeevan Saathi"},{"t":"Dil Chahta Hai","f":"Dil Chahta Hai"}]},{"slug":"auto-wala","name":"Auto Wala","hi":"ऑटो वाला","tagline":"Speaker bigger than the meter","blurb":"Three wheels, mirror-work upholstery, a subwoofer where the toolbox should be. He takes the corner at an angle the physics does not allow and the bass does not drop for the whole ride.","hours":[18,19,20,21],"songs":[{"t":"Dilbar Dilbar","f":"Sirf Tum"},{"t":"Kaanta Laga","f":"DJ Doll"},{"t":"Tunak Tunak Tun","f":"Daler Mehndi"},{"t":"Bolo Ta Ra Ra","f":"Daler Mehndi"},{"t":"Aankh Marey","f":"Simmba"},{"t":"Munni Badnaam Hui","f":"Dabangg"},{"t":"Sheila Ki Jawani","f":"Tees Maar Khan"},{"t":"Chikni Chameli","f":"Agneepath"},{"t":"Lungi Dance","f":"Chennai Express"},{"t":"Abhi Toh Party Shuru Hui Hai","f":"Khoobsurat"},{"t":"Tamma Tamma Loge","f":"Thanedaar"},{"t":"Saturday Saturday","f":"Humpty Sharma Ki Dulhania"}]},{"slug":"chai-tapri","name":"Chai Tapri","hi":"चाय टपरी","tagline":"Golden hour, cutting chai","blurb":"Steel glasses, plastic stools, one kettle that has never been washed and gossip that solves nothing and everything. The sun is going down behind the flyover and nobody has anywhere to be for twenty more minutes.","hours":[16,17,18],"songs":[{"t":"Kabira","f":"Yeh Jawaani Hai Deewani"},{"t":"Ilahi","f":"Yeh Jawaani Hai Deewani"},{"t":"Phir Le Aaya Dil","f":"Barfi!"},{"t":"Iktara","f":"Wake Up Sid"},{"t":"Behti Hawa Sa Tha Woh","f":"3 Idiots"},{"t":"Khoya Khoya Chand","f":"Kala Bazar"},{"t":"Tum Ho Toh","f":"Rock On!!"},{"t":"Masakali","f":"Delhi-6"},{"t":"Nadaan Parindey","f":"Rockstar"},{"t":"Bandeh","f":"Black Friday"},{"t":"Ma Rewa","f":"Indian Ocean"},{"t":"Ek Garam Chai Ki Pyali Ho","f":""}]},{"slug":"gym-wala","name":"Gym Wala","hi":"जिम वाला","tagline":"Last set, no spotter","blurb":"Basement gym, one mirror wall, rusted plates and a trainer named Pehelwan ji. The playlist has exactly one job and it does it without subtlety.","hours":[5,6,7,19,20],"songs":[{"t":"Sultan Title Track","f":"Sultan"},{"t":"Brothers Anthem","f":"Brothers"},{"t":"Zinda","f":"Bhaag Milkha Bhaag"},{"t":"Ziddi Dil","f":"Mary Kom"},{"t":"Malang","f":"Dhoom 3"},{"t":"Khalibali","f":"Padmaavat"},{"t":"Sher Aaya Sher","f":"Gully Boy"},{"t":"Apna Time Aayega","f":"Gully Boy"},{"t":"Dangal Title Track","f":"Dangal"},{"t":"Get Ready To Fight","f":"Baaghi"},{"t":"Bhaag DK Bose","f":"Delhi Belly"},{"t":"Chak Lein De","f":"Chandni Chowk To China"}]},{"slug":"shaadi-wala","name":"Shaadi Wala","hi":"शादी वाला","tagline":"Baraat is not moving","blurb":"Generator lights, a dhol that started at four in the afternoon, and every uncle convinced the floor is his. The baraat has covered forty metres in an hour and a half. Nobody is complaining.","hours":[19,20,21,22],"songs":[{"t":"Didi Tera Devar Deewana","f":"Hum Aapke Hain Koun..!"},{"t":"Mehndi Laga Ke Rakhna","f":"Dilwale Dulhania Le Jayenge"},{"t":"Bole Chudiyan","f":"Kabhi Khushi Kabhie Gham"},{"t":"Aaj Mere Yaar Ki Shaadi Hai","f":"Aadmi Sadak Ka"},{"t":"London Thumakda","f":"Queen"},{"t":"Nagada Sang Dhol","f":"Goliyon Ki Raasleela Ram-Leela"},{"t":"Gallan Goodiyaan","f":"Dil Dhadakne Do"},{"t":"Saajanji Ghar Aaye","f":"Kuch Kuch Hota Hai"},{"t":"Dulhe Ka Sehra","f":"Dhadkan"},{"t":"Chunari Chunari","f":"Biwi No.1"},{"t":"Kajra Re","f":"Bunty Aur Babli"},{"t":"Wah Wah Ramji","f":"Hum Aapke Hain Koun..!"}]},{"slug":"dhaba-wala","name":"Dhaba Wala","hi":"ढाबा वाला","tagline":"Charpai, dal makhani, 1am","blurb":"Somewhere on GT Road. String lights, a tandoor still going, charpais laid out in the gravel. Punjabi at a volume that carries to the next dhaba, which is playing the same song.","hours":[21,22,23,0,1],"songs":[{"t":"Mundian To Bach Ke","f":"Panjabi MC"},{"t":"Gur Naal Ishq Mitha","f":"Malkit Singh"},{"t":"Jugni","f":"Cocktail"},{"t":"Sadi Gali","f":"Tanu Weds Manu"},{"t":"Kala Chashma","f":"Baar Baar Dekho"},{"t":"Patiala Peg","f":"Diljit Dosanjh"},{"t":"Laembadgini","f":"Diljit Dosanjh"},{"t":"Do You Know","f":"Diljit Dosanjh"},{"t":"High Rated Gabru","f":"Guru Randhawa"},{"t":"Lamberghini","f":"The Doorbeen"},{"t":"Brown Munde","f":"AP Dhillon"},{"t":"Yaar Anmulle","f":"Sharry Mann"}]},{"slug":"paan-wala","name":"Paan Wala","hi":"पान वाला","tagline":"Meetha, extra gulkand","blurb":"A glass case of silver leaf and supari, a transistor on the shelf, and a queue of three men who came for cigarettes and stayed for the argument. Pure eighties masala, no apologies.","hours":[20,21,22],"songs":[{"t":"Khaike Paan Banaraswala","f":"Don"},{"t":"I Am A Disco Dancer","f":"Disco Dancer"},{"t":"Jimmy Jimmy Aaja","f":"Disco Dancer"},{"t":"Ui Amma Ui Amma","f":"Mawaali"},{"t":"Aap Jaisa Koi","f":"Qurbani"},{"t":"Jawani Janeman","f":"Namak Halaal"},{"t":"Pag Ghungroo Baandh","f":"Namak Halaal"},{"t":"Ek Do Teen","f":"Tezaab"},{"t":"Papa Kehte Hain","f":"Qayamat Se Qayamat Tak"},{"t":"Tirchi Topiwale","f":"Tridev"},{"t":"Oye Oye","f":"Tridev"},{"t":"Yaad Aa Raha Hai","f":"Disco Dancer"}]},{"slug":"mandir-wala","name":"Mandir Wala","hi":"मंदिर वाला","tagline":"5am, bell and loudspeaker","blurb":"Before the traffic starts. A bell, a conch, agarbatti smoke and a horn speaker on a pole that the whole colony can hear whether it wants to or not.","hours":[4,5,6,7],"songs":[{"t":"Om Jai Jagdish Hare","f":""},{"t":"Achyutam Keshavam","f":"Bhajan"},{"t":"Hanuman Chalisa","f":"Hariharan"},{"t":"Gayatri Mantra","f":"Anuradha Paudwal"},{"t":"Aisi Lagi Lagan","f":"Anup Jalota"},{"t":"Jai Ganesh Deva","f":""},{"t":"Sukhkarta Dukhharta","f":""},{"t":"Raghupati Raghav Raja Ram","f":""},{"t":"Vaishnav Jan To","f":""},{"t":"Man Tarpat Hari Darshan Ko Aaj","f":"Baiju Bawra"},{"t":"Allah Tero Naam","f":"Hum Dono"},{"t":"Tu Pyar Ka Sagar Hai","f":"Seema"}]},{"slug":"qawwali-wala","name":"Qawwali Wala","hi":"कव्वाली वाला","tagline":"Dargah courtyard, after Isha","blurb":"Harmonium, tabla, and eight men clapping on the off-beat until the courtyard gives in. It starts slow. It does not stay slow.","hours":[21,22,23,0],"songs":[{"t":"Dama Dam Mast Qalandar","f":"Nusrat Fateh Ali Khan"},{"t":"Tumhe Dillagi","f":"Nusrat Fateh Ali Khan"},{"t":"Afreen Afreen","f":"Nusrat Fateh Ali Khan"},{"t":"Sanson Ki Mala Pe","f":"Nusrat Fateh Ali Khan"},{"t":"Bhar Do Jholi Meri","f":"Bajrangi Bhaijaan"},{"t":"Kun Faya Kun","f":"Rockstar"},{"t":"Khwaja Mere Khwaja","f":"Jodhaa Akbar"},{"t":"Piya Haji Ali","f":"Fiza"},{"t":"Arziyan","f":"Delhi-6"},{"t":"Parda Hai Parda","f":"Amar Akbar Anthony"},{"t":"Hai Agar Dushman","f":"Hum Kisise Kum Naheen"},{"t":"Tajdar-e-Haram","f":"Atif Aslam"}]},{"slug":"train-wala","name":"Train Wala","hi":"ट्रेन वाला","tagline":"Side upper, 3am, chai","blurb":"Sleeper class with the window shutter up. Fields going past in the dark, somebody snoring two berths down, and a chaiwala who will come through at exactly the wrong hour. Kishore, mostly.","hours":[23,0,1,2,3,4,5],"songs":[{"t":"Chaiyya Chaiyya","f":"Dil Se.."},{"t":"Mere Sapno Ki Rani","f":"Aradhana"},{"t":"Gaadi Bula Rahi Hai","f":"Dost"},{"t":"Zindagi Ka Safar","f":"Safar"},{"t":"Kuch To Log Kahenge","f":"Amar Prem"},{"t":"Chingari Koi Bhadke","f":"Amar Prem"},{"t":"Yeh Shaam Mastani","f":"Kati Patang"},{"t":"Diye Jalte Hain","f":"Namak Haraam"},{"t":"Main Shayar Badnaam","f":"Namak Haraam"},{"t":"O Mere Dil Ke Chain","f":"Mere Jeevan Saathi"},{"t":"Raat Kali Ek Khwab Mein Aayi","f":"Buddha Mil Gaya"},{"t":"Rail Gaadi","f":"Ashok Kumar"}]},{"slug":"barish-wala","name":"Barish Wala","hi":"बारिश वाला","tagline":"First rain, grille open","blurb":"The smell before it lands, then the sound on the tin awning. Power will go in about four minutes. Somebody is already making pakodas.","hours":[15,16,17,18,19],"songs":[{"t":"Rimjhim Gire Sawan","f":"Manzil"},{"t":"Bheegi Bheegi Raaton Mein","f":"Ajnabee"},{"t":"Ab Ke Sawan","f":"Shubha Mudgal"},{"t":"Barso Re","f":"Guru"},{"t":"Tip Tip Barsa Paani","f":"Mohra"},{"t":"Kaate Nahi Kat Te","f":"Mr. India"},{"t":"Ghanan Ghanan","f":"Lagaan"},{"t":"Koi Ladki Hai","f":"Dil To Pagal Hai"},{"t":"Bheegi Bheegi","f":"Gangster"},{"t":"Zara Zara","f":"Rehnaa Hai Terre Dil Mein"},{"t":"Megha Re Megha","f":"Pyaasa Sawan"},{"t":"Lagi Aaj Sawan Ki","f":"Chandni"}]},{"slug":"padhai-wala","name":"Padhai Wala","hi":"पढ़ाई वाला","tagline":"Table lamp, 2am, exam in six days","blurb":"One lamp, one desk, a cold cup of Bournvita and a syllabus that is not going to finish itself. Soft enough to keep going, sad enough to feel like it matters.","hours":[22,23,0,1,2],"songs":[{"t":"Tum Ho","f":"Rockstar"},{"t":"Agar Tum Saath Ho","f":"Tamasha"},{"t":"Khamoshiyan","f":"Khamoshiyan"},{"t":"Tere Bina","f":"Guru"},{"t":"Luka Chuppi","f":"Rang De Basanti"},{"t":"Ae Ajnabi","f":"Dil Se.."},{"t":"Naina Da Kya Kasoor","f":"Andhadhun"},{"t":"Raabta","f":"Agent Vinod"},{"t":"Hasi","f":"Hamari Adhuri Kahani"},{"t":"Jag Ghoomeya","f":"Sultan"},{"t":"Manja","f":"Kai Po Che!"},{"t":"Kho Gaye Hum Kahan","f":"Baar Baar Dekho"}]}];</script>
+<script src="assets/js/config.js"></script>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/home.js"></script>
+<script src="assets/js/counters.js"></script>
 </body>
 </html>

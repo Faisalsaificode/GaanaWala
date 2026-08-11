@@ -10,7 +10,9 @@
     "start": "node tools/build.mjs && node tools/serve.mjs 8099",
     "resolve": "node tools/resolve-youtube.mjs",
     "resolve:force": "node tools/resolve-youtube.mjs --force",
-    "check": "node tools/check-embeds.mjs"
+    "check": "node tools/check-embeds.mjs",
+    "check:counters": "node tools/check-counters.mjs",
+    "check:firebase": "node tools/check-firebase.mjs"
   },
   "engines": { "node": ">=20" }
 }

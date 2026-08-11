@@ -119,7 +119,8 @@ function card(st) {
     <div class="name-hi">${esc(st.hi)}</div>
     <div class="tag">${esc(st.tagline)}</div>
     <div class="meta">
-      <span>${mins(st.songs)} min rotation</span>
+      <span class="live-for" data-live-for="${st.slug}" hidden></span>
+      <span class="dim">${mins(st.songs)} min rotation</span>
       <span class="play">Play <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
     </div>
   </div>
@@ -149,6 +150,10 @@ ${topbar(0)}
     <h1>Find Your Next <span class="accent">Gaana Wala</span></h1>
     <p class="lede">Every place in India has its own soundtrack, and everybody already knows it. The barber's. The truck cabin at 2am. The tapri at golden hour. Pick a place and press play.</p>
     <div class="now-hint" id="now-hint"></div>
+    <div class="stats" id="stats" hidden>
+      <span class="stat"><span class="pulse" aria-hidden="true"></span><b id="live-now">–</b> listening right now</span>
+      <span class="stat"><b id="total-visits">–</b> visits all time</span>
+    </div>
   </section>
 
   <div class="wrap">
@@ -170,8 +175,10 @@ ${lib.stations.map(card).join('\n')}
 </main>
 ${footer(0)}
 <script>window.GW_STATIONS=${JSON.stringify(slim)};</script>
+<script src="assets/js/config.js"></script>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/home.js"></script>
+<script src="assets/js/counters.js"></script>
 </body>
 </html>
 `;
@@ -238,7 +245,9 @@ ${topbar(2)}
           <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
         </button>
         <div class="track-info">
-          <div class="label" id="tr-label">now playing · ${esc(st.name)}</div>
+          <div class="label" id="tr-label">now playing · ${esc(st.name)}
+            <span class="live-here" id="live-here" hidden><span class="pulse" aria-hidden="true"></span><b>0</b> here now</span>
+          </div>
           <div class="title" id="tr-title">—</div>
           <div class="sub" id="tr-sub"></div>
         </div>
@@ -292,8 +301,10 @@ ${others
 ${footer(2)}
 <div id="yt-host"></div>
 <script>window.GW_STATION=${JSON.stringify(payload)};</script>
+<script src="../../assets/js/config.js"></script>
 <script src="../../assets/js/common.js"></script>
 <script src="../../assets/js/player.js"></script>
+<script src="../../assets/js/counters.js"></script>
 </body>
 </html>
 `;

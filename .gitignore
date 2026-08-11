@@ -2,3 +2,10 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# Firebase service-account keys grant full unrestricted access to the database.
+# They belong on a server, never in this repo.
+serviceAccountKey.json
+*serviceAccount*.json
+*-firebase-adminsdk-*.json
+.env
