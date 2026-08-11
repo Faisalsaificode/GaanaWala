@@ -87,6 +87,8 @@ marked and skipped rather than stalling the station.
 
 ## Deploying to GitHub Pages
 
+Live at **https://gaanawala.run.place**
+
 ```bash
 git init
 git add .
@@ -97,12 +99,30 @@ git push -u origin main
 ```
 
 Then **Settings → Pages → Source: GitHub Actions**. The included workflow
-(`.github/workflows/pages.yml`) rebuilds and deploys on every push to `main`, and passes
-the real site URL in so canonical links and `sitemap.xml` come out right.
+(`.github/workflows/pages.yml`) rebuilds and deploys on every push to `main`.
 
 If you would rather not use Actions, the generated files are committed too — set
 **Source: Deploy from a branch → main → / (root)** and it works as-is. `.nojekyll` is
 present so the build is served verbatim.
+
+### The custom domain
+
+`CNAME` holds the domain and is the **single source of truth**: GitHub Pages reads it to
+route the domain, and `tools/build.mjs` reads the same file to write canonical links,
+`og:url` and `sitemap.xml`. Change the domain in one place and everything follows.
+
+DNS — `gaanawala` is a subdomain, so one record does it:
+
+| Type | Host | Value |
+|---|---|---|
+| CNAME | `gaanawala` | `<your-github-username>.github.io` |
+
+Note the value is your **user** subdomain, not the repo — no `/repo` path, no trailing
+slash. Then **Settings → Pages → Custom domain** → `gaanawala.run.place` → Save, wait for
+the DNS check to go green, then tick **Enforce HTTPS** (the certificate can take up to an
+hour to issue).
+
+Do not delete `CNAME` — losing it drops the domain on the next deploy.
 
 ## Credit where it is due
 

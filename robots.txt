@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gaanawala.run.place/sitemap.xml

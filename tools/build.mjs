@@ -16,9 +16,17 @@ const lib = JSON.parse(await readFile(path.join(ROOT, 'data', 'library.json'), '
 const SITE = 'Gaana Wala';
 const TAGLINE = 'Find Your Next Gaana Wala';
 
-// Set GW_SITE_URL (e.g. https://you.github.io/GaanaWala) to emit canonical
-// links, og:url and a sitemap. Everything works without it too.
-const SITE_URL = (process.env.GW_SITE_URL || '').replace(/\/+$/, '');
+// The custom domain in CNAME is the single source of truth for absolute URLs
+// (canonical links, og:url, sitemap). GitHub Pages reads the same file, so the
+// two can never drift. GW_SITE_URL is the fallback when there is no CNAME.
+async function siteUrl() {
+  try {
+    const domain = (await readFile(path.join(ROOT, 'CNAME'), 'utf8')).trim();
+    if (domain) return `https://${domain.toLowerCase()}`;
+  } catch {}
+  return (process.env.GW_SITE_URL || '').replace(/\/+$/, '');
+}
+const SITE_URL = await siteUrl();
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

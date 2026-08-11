@@ -29,6 +29,8 @@ jobs:
 
       # Regenerates index.html and s/<slug>/index.html from data/library.json.
       # No dependencies to install — the generator is plain Node.
+      # Absolute URLs come from the CNAME file; GW_SITE_URL is only the
+      # fallback for a deploy with no custom domain.
       - name: Build
         run: node tools/build.mjs
         env:
